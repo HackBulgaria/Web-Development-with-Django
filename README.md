@@ -4,6 +4,9 @@ This course is NOT for beginners - Python experience is required.
 
 Throughout the course we'll be learning Django fundamentals and we will develop production-ready code.
 
+## Versions
+
+We will stick with the latest versions of Python (`3.5` / `3.6`) and Django (`1.10` / `1.11`).
 
 ## Course Program
 
@@ -19,4 +22,3 @@ The duration of the course is 9 weeks including 16 lectures:
 * Django Rest Framework. Creating APIs
 * Introduction to Celery as task runner for async tasks
 * Deployment of your Django application
-
