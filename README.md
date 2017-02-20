@@ -1,7 +1,5 @@
 This is the first edition of the Web development with Django course in HackBulgaria.
 
-This course is NOT for beginners - Python experience is required.
-
 Throughout the course we'll be learning Django fundamentals and we will develop production-ready code.
 
 ## Versions
@@ -21,4 +19,20 @@ The duration of the course is 9 weeks including 16 lectures:
 * Authentication with Django
 * Django Rest Framework. Creating APIs
 * Introduction to Celery as task runner for async tasks
+* Implementing payment providers.
 * Deployment of your Django application
+
+
+## Prerequisites
+
+* This course is NOT for beginners - Python experience is required.
+* Frontend knowledge (HTML / CSS / JavaScript) is optional. We won't dive into that.
+
+## Problems for preparing
+
+In order to prepare yourself (if you need to) for the course, you can solve the following problems, from our last "Programming 101 with Python" course:
+
+* [Everything from week01](https://github.com/HackBulgaria/Programming101-Python-2016/tree/master/week01) - small Python functions to warm you up.
+* [Money in the bank from week11](https://github.com/HackBulgaria/Programming101-Python-2016/tree/master/week11/01-Money-In-The-Bank) - this problem is about refactoring an existing codebase in order to make it more secure. SQL is involved.
+* [Decorators from week10](https://github.com/HackBulgaria/Programming101-Python-2016/tree/master/week10/Decorators) - a very important Python concept.
+* [Generators from week12](https://github.com/HackBulgaria/Programming101-Python-2016/tree/master/week12/01-Generators) - another very important Python concept.
