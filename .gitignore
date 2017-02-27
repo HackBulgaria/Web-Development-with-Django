@@ -105,3 +105,5 @@ Session.vim
 *~
 # auto-generated tag files
 tags
+
+*.sqlite3
