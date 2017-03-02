@@ -80,3 +80,8 @@ Again, you can use the `test_client.py` that we have provided:
 $ pip install -r requirements.txt
 $ python test_client.py
 ```
+
+## Hints
+
+* You can use [`csrf_exempt` decorator](https://docs.djangoproject.com/en/1.10/ref/csrf/#django.views.decorators.csrf.csrf_exempt)
+* You can store your data in `<uuid>.json` format in some folder
