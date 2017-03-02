@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+import json
+from math import factorial
+
+from django.http import HttpResponse, JsonResponse
 from django.utils.html import escape
 
 from .utils import list_urls
@@ -36,3 +39,19 @@ def index(request):
 
     contents = "".join(contents)
     return HttpResponse(table.format(contents))
+
+
+"""
+{
+    "input": 5
+}
+"""
+def fact(request):
+    if request.method == 'POST':
+        body = request.body.decode('utf-8')
+        body = json.loads(body)
+        n = body['input']
+
+        return JsonResponse({'result': factorial(n)})
+
+    return HttpResponse(status=405)
