@@ -1,10 +1,12 @@
 # Week 2
 
-## Agenda for the first week. 
+Agenda:
+
 - Setup a PostgreSQL Server
 - Connect django project to the PostgreSQL server
 - Models
 - Migrations
+- Templates
 
 ## Setting up PostgreSQL
 
