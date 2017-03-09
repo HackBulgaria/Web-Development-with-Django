@@ -69,3 +69,9 @@ Docs for further reading:
 
 * <https://docs.djangoproject.com/en/1.10/topics/db/models/>
 * <https://docs.djangoproject.com/en/1.10/topics/db/queries/>
+
+## Templates
+
+* General overview - <https://docs.djangoproject.com/en/1.10/topics/templates/>
+* DTL Syntax - <https://docs.djangoproject.com/en/1.10/ref/templates/language/>
+* Built-in tags & filters - <https://docs.djangoproject.com/en/1.10/ref/templates/builtins/>
