@@ -11,3 +11,5 @@
 Django has a very powerful abstraction over HTML forms - <https://docs.djangoproject.com/en/1.10/topics/forms/>
 
 They are very useful for doing validation.
+
+If you want to create a form for a given model, you can try model forms - <https://docs.djangoproject.com/en/1.10/topics/forms/modelforms/>
