@@ -1,0 +1,41 @@
+{% extends "blog/base.html" %}
+
+{% block style %}
+ label {
+  display: block;
+ }
+{% endblock style %}
+
+{% block content %}
+
+{% if errors %}
+  <h1>Errors!</h1>
+  {% for error in errors %}
+    <p>{{ error }}</p>
+  {% endfor %}
+{% endif %}
+
+<form method="POST" action="">
+  <label for="">
+    <input type="text" name="title" value="{{ title }}" />
+  </label>
+  <label for="">
+    <textarea name="content">{{ content }}</textarea>
+  </label>
+  <select name="tags" multiple="multiple">
+  {% for tag in tags %}
+  <option value="{{ tag.id }}" {% if tag.id in tag_ids %}selected{% endif %}>{{ tag.name }}</option>
+  {% endfor %}
+  </select>
+
+  {% csrf_token %}
+  <label for="">
+    <input type="submit" value="Submit" />
+  </label>
+</form>
+
+{% endblock content %}
+
+{% block footer %}
+  {{ block.super }}
+{% endblock footer %}
