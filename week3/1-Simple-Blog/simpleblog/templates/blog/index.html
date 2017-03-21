@@ -5,6 +5,9 @@ I am the index page.
 {% endblock title %}
 
 {% block content %}
+
+{{ request.session.counter }}
+
 <div id="posts-container">
   <table border="1">
     <thead>

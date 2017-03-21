@@ -1,0 +1,9 @@
+{{ request.user }}
+
+
+<form action="" method="POST">
+  {{ form.as_p }}
+  {% csrf_token %}
+
+  <input type="submit" value="Login" />
+</form>

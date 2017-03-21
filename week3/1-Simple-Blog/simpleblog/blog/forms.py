@@ -3,6 +3,13 @@ from django import forms
 from .models import BlogPost
 
 
+class LoginForm(forms.Form):
+    use_required_attribute = False
+
+    username = forms.CharField(label='Username')
+    password = forms.CharField(widget=forms.PasswordInput)
+
+
 class BlogPostCreateModelForm(forms.ModelForm):
     use_required_attribute = False
 
