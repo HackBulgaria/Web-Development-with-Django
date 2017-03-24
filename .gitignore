@@ -107,3 +107,4 @@ Session.vim
 tags
 
 *.sqlite3
+bower_components/
