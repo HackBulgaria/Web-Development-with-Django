@@ -1,0 +1,12 @@
+$white: #fff;
+
+/// Alert Messages
+
+.alert {
+	> p {
+		color: $white;
+	}
+	&.animated {
+		z-index: 999999 !important;
+	}
+}

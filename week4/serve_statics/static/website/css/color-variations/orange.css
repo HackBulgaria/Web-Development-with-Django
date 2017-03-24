@@ -1,0 +1,236 @@
+/* DEFAULT HEX COLOR: #FCC43F */
+/* CHANE IT BY REPLEACING THE VALUE ABOVE */
+
+::-moz-selection {
+ background: #FCC43F;
+ color: #333;
+ text-shadow: none;
+}
+::selection {
+	background: #FCC43F;
+	text-shadow: none;
+	color: #333;
+}
+.text-colored, h1.text-colored, h2.text-colored, h3.text-colored, h4.text-colored, h5.text-colored, h6.text-colored, .color-font, .color-font a, .widget-tweeter li a, .widget-twitter li a, p.text-colored, .heading.heading-colored h1, .heading.heading-colored h2 {
+	color: #FCC43F !important;
+}
+.progress-bar-container.color .progress-bar {
+	background-color: #FCC43F;
+	color: #fff;
+}
+.blockquote-color {
+	background-color: #FCC43F;
+	color: #fff;
+}
+.blockquote-color > small {
+	color: #fff;
+}
+/*buttons*/
+.button.color, .btn.btn-primary {
+	background-color: #FCC43F;
+	border-color: #FCC43F;
+	color: #fff;
+}
+/*go to top*/
+
+.gototop-button {
+	background-color: #FCC43F;
+}
+.gototop-button {
+	color: #fff;
+}
+nav .main-menu .dropdown-menu {
+	border-color: #FCC43F;
+}
+#topbar.topbar-colored {
+	background-color: #FCC43F;
+}
+/*vertical-dot-menu */
+#vertical-dot-menu a:hover .cd-dot, #vertical-dot-menu a.active .cd-dot {
+	background-color: #FCC43F;
+}
+/*scrollspy nav */
+/*.sidebar-menu ul.nav-tabs li, */
+.sidebar-menu ul.nav-tabs li:hover .sidebar-menu ul.nav-tabs li a, .sidebar-menu ul.nav-tabs li a:hover, .sidebar-menu ul.nav-tabs li.active a, .sidebar-menu ul.nav-tabs li.active a:hover {
+	color: #fff;
+	background: #FCC43F;
+	border: 1px solid #FCC43F;
+}
+/*Bootstrap defaults overrides*/
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #FCC43F;
+	border-color: #FCC43F;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+	color: #fff;
+}
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+	color: #FCC43F;
+}
+pre {
+	background-color: #fcfcfc;
+	border: 1px solid #ececec;
+}
+.alert {
+	border-left-width: 10px;
+	border-radius: 0;
+}
+.alert-success {
+	background-color: #5cb85c;
+	border-color: #53af53;
+}
+.alert-info {
+	background-color: #2699c8;
+	border-color: #3aaddc;
+}
+.alert-warning {
+	background-color: #f6b63a;
+	border-color: #ffcd51;
+}
+.alert-danger {
+	background-color: #de4b37;
+	border-color: #f3604c;
+}
+.alert, .alert a.alert-link {
+	color: #fff;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	background-color: #FCC43F;
+	border-color: #FCC43F;
+	color: #fff;
+}
+.pagination > li > a:hover i, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	color: #333;
+}
+/*navs*/
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: #FCC43F;
+	color: #fff;
+}
+/*Typography*/
+
+a:hover {
+	color: #FCC43F;
+}
+/*dropcat & highlight*/
+.dropcap.dropcap-colored, .dropcap.dropcap-colored a, .highlight.highlight-colored, .highlight.highlight-colored a {
+	background-color: #FCC43F;
+	color: #fff;
+}
+/*timeline*/
+.timeline.timeline-colored .timeline-circles:before, .timeline.timeline-colored .timeline-circles:after, .timeline.timeline-colored .timeline-date, .timeline.timeline-colored:before {
+	background-color: #FCC43F;
+	color: #fff;
+}
+.timeline.timeline-colored li .timeline-block:before {
+	border-color: transparent #FCC43F;
+}
+.timeline.timeline-colored .timeline-block-image {
+	border-color: #FCC43F;
+}
+.timeline.timeline-colored.timeline-simple .timeline-date {
+	background-color: #fff;
+	border: 1px solid #FCC43F;
+	color: #FCC43F;
+}
+/*tabs*/
+
+.border .tabs-navigation li.active a:after {
+	background: #FCC43F;
+}
+/*accordions*/
+
+.breadcrumb a:hover {
+	color: #FCC43F;
+}
+/*color*/
+
+.accordion.color .ac-item .ac-title {
+	background: #FCC43F;
+	color: #fff;
+}
+.accordion.color-border-bottom .ac-item .ac-title {
+	border-bottom: 1px dotted #FCC43F;
+}
+.accordion.color-border-bottom .ac-item .ac-title:before {
+	color: #FCC43F;
+}
+/*ICONS*/
+
+.icon-box.color .icon i {
+	background: #FCC43F;
+	color: #fff;
+}
+.icon-box.color .icon i:after {
+	box-shadow: 0 0 0 3px #FCC43F;
+}
+.icon-box.border.color .icon, .icon-box.border.color .icon i {
+	color: #FCC43F;
+	border-color: #FCC43F;
+}
+.icon-box.fancy.color .icon i {
+	color: #FCC43F;
+	background-color: transparent;
+}
+/*FONT AWESOME ICONS*/
+
+.fontawesome-icon-list .fa-hover a:hover {
+	background-color: #FCC43F;
+}
+/*lists icons*/
+
+ul.icon-list li i {
+	color: #FCC43F;
+}
+/* ----------------------------------------------------------------
+    Backgrounds
+-----------------------------------------------------------------*/
+
+.background-colored {
+	background-color: #FCC43F !important;
+}
+/* ----------------------------------------------------------------
+    NPROGRESS
+-----------------------------------------------------------------*/
+
+#nanobar-progress div {
+	background: #FCC43F !important;
+}
+/* ----------------------------------------------------------------
+    PORTFOLIO
+-----------------------------------------------------------------*/
+.portfolio-filter li.ptf-active, .portfolio-filter li:hover {
+	background-color: #FCC43F;
+}
+.portfolio-filter li:not(.ptf-active):hover {
+	color: #FCC43F;
+}
+/* ----------------------------------------------------------------
+    HEADINGS
+-----------------------------------------------------------------*/
+.heading-title-border-color {
+	border-color: #FCC43F;
+}
+/* ----------------------------------------------------------------
+    IMAGE BOX
+-----------------------------------------------------------------*/
+.image-box-links a {
+	background-color: #FCC43F;
+}
+.image-box.effect.bleron {
+	background-color: #FCC43F;
+}
+.image-block-content .feature-icon {
+	background-color: #FCC43F;
+}
+.image-box.effect.bleron p.image-box-links a {
+	color: #FCC43F;
+}
+/* ----------------------------------------------------------------
+    SHOP PRODUCTS
+-----------------------------------------------------------------*/
+.product .product-wishlist a:hover {
+	border-color: #FCC43F;
+}

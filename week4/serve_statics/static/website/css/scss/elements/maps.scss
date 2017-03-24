@@ -1,0 +1,34 @@
+
+// Maps
+
+.map {
+  width: 100%;
+  height: 370px;
+  min-height: 100%;
+}
+
+body {
+	&:not(.device-xxs):not(.device-xs):not(.device-sm):not(.device-md) {
+		section.fullscreen-map-form-container {
+			margin-top: -300px;
+		}
+		.fullscreen-map-form-container {
+			margin-bottom: 80px;
+            margin-top: -300px;
+            position: relative;
+		}
+	}
+	&:not(.device-md):not(.device-lg):not(.device-sm) {
+		.fullscreen-map-form-container {
+			padding-top: 80px;
+            padding-bottom: 80px;
+		}
+	}
+	&:not(.device-xxs):not(.device-xs) {
+		.fullscreen-map-form {
+			padding-top: 60px;
+            padding-left: 40px;
+            padding-right: 40px;
+		}
+	}
+}

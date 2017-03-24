@@ -1,0 +1,143 @@
+// Fonts 
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+    color: #111;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 10px 0;
+    text-rendering: optimizelegibility;
+}
+
+h1 { font-size: 36px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 12px; }
+
+h4 { font-weight: 600; }
+
+h5,
+h6 { font-weight: bold; margin-bottom: 20px; }
+
+p,
+p.lead {
+    color: #696f6f;
+    margin-bottom: 20px;
+}
+
+.lead {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+// Fonts
+
+.font-pacifico {
+	font-family: 'Dancing Script' !important;
+}
+.font-raleway {
+	a,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Raleway' !important;
+        font-weight: 100 !important;
+	}
+}
+h1.font-raleway,
+h2.font-raleway,
+h3.font-raleway,
+h4.font-raleway,
+h5.font-raleway,
+h6.font-raleway {
+    font-family: 'Raleway' !important;
+    font-weight: 100 !important;
+}
+
+.font-nothing-you-could-do,
+.font-nothing-you-could-do a,
+.font-nothing-you-could-do h1,
+.font-nothing-you-could-do h2,
+.font-nothing-you-could-do h3,
+.font-nothing-you-could-do h4,
+.font-nothing-you-could-do h5,
+.font-nothing-you-could-do h6,
+h1.font-nothing-you-could-do,
+h2.font-nothing-you-could-do,
+h3.font-nothing-you-could-do,
+h4.font-nothing-you-could-do,
+h5.font-nothing-you-could-do,
+h6.font-nothing-you-could-do {
+    font-family: 'Nothing You Could Do', cursive !important;
+    font-weight: normal !important;
+}
+.font-herr-von-muellerhoff,
+.font-herr-von-muellerhoff a,
+.font-herr-von-muellerhoff h1,
+.font-herr-von-muellerhoff h2,
+.font-herr-von-muellerhoff h3,
+.font-herr-von-muellerhoff h4,
+.font-herr-von-muellerhoff h5,
+.font-herr-von-muellerhoff h6,
+h1.font-herr-von-muellerhoff,
+h2.font-herr-von-muellerhoff,
+h3.font-herr-von-muellerhoff,
+h4.font-herr-von-muellerhoff,
+h5.font-herr-von-muellerhoff,
+h6.font-herr-von-muellerhoff {
+    font-family: 'Herr Von Muellerhoff', cursive !important;
+    font-weight: normal !important;
+}
+.font-cedarville,
+.font-cedarville a,
+.font-cedarville h1,
+.font-cedarville h2,
+.font-cedarville h3,
+.font-cedarville h4,
+.font-cedarville h5,
+.font-cedarville h6,
+h1.font-cedarville,
+h2.font-cedarville,
+h3.font-cedarville,
+h4.font-cedarville,
+h5.font-cedarville,
+h6.font-cedarville {
+    font-family: 'Cedarville Cursive', cursive;
+}
+.font-parisienne,
+.font-parisienne a,
+.font-parisienne h1,
+.font-parisienne h2,
+.font-parisienne h3,
+.font-parisienne h4,
+.font-parisienne h5,
+.font-parisienne h6,
+h1.font-parisienne,
+h2.font-parisienne,
+h3.font-parisienne,
+h4.font-parisienne,
+h5.font-parisienne,
+h6.font-parisienne {
+    font-family: 'Parisienne', cursive;
+}

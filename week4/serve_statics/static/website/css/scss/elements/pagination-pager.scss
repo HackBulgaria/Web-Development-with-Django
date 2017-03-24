@@ -1,0 +1,212 @@
+
+// Pagination & Pager
+
+.pagination-wrap {
+	display: block;
+	clear: both;
+}
+.pagination {
+	> li > a,
+	> li > span {
+		color: #b0b0b0;
+        padding: 8px 14px;
+	}
+	i {
+		font-size: 18px;
+        color: #b9b9b9;
+	}
+	// pagination simple style
+	&.pagination-simple {
+		margin: 0;
+		> li > a,
+		> li > span {
+			border: 0;
+            background-color: transparent !important;
+		}
+		> li {
+			> a:hover i,
+			> a:hover,
+			> span:hover,
+			> a:focus,
+			> span:focus {
+				background-color: transparent !important;
+                border-color: transparent !important;
+                color: #333;
+			}
+		}
+		> .active > {
+			a,
+			span,
+			a:hover,
+			span:hover,
+			a:focus,
+			span:focus {
+				background: rgba(0, 0, 0, 0);
+                color: #646464;
+                font-size: 130%;
+                font-weight: 600;
+                padding-top: 3px;
+			}
+		}
+	}
+	// Pagination fancy styles
+	&.pagination-fancy {
+		> li a {
+			border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+		}
+	}
+}
+.pagination.pagination-fancy > li:first-child > a,
+.pagination-fancy > li:first-child > span {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 0;
+}
+.pagination.pagination-fancy > li:last-child > a,
+.pagination-fancy > li:last-child > span {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 0;
+}
+
+// pagination rounded style 
+.pagination {
+	.pagination-rounded {
+		> li > a,
+		> li > span {
+			padding: 8px 14px 9px;
+		}
+	}
+}
+.pagination.pagination-rounded > li > a,
+.pagination-rounded > li > span {
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.pagination.pagination-rounded > li:first-child > a,
+.pagination-rounded > li:first-child > span {
+    background: none !important;
+    border: 0 none !important;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+.pagination.pagination-rounded > li:last-child > a,
+.pagination-rounded > li:last-child > span {
+    background: none !important;
+    border: 0 none !important;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+// Pager
+
+.pager {
+	> li {
+		> a,
+		> span {
+			color: #b0b0b0;
+            padding: 8px 14px;
+		}
+	}
+	i {
+		font-size: 18px;
+        color: #fff;
+	}
+	&.pager-fancy {
+		> li a {
+			background-color: #00c0e9;
+            border-color: #00c0e9;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            &:hover {
+            	opacity: 0.9;
+            }
+		}
+	}
+	&.pager-rounded {
+		> li a {
+			background-color: #00c0e9;
+            border-color: #00c0e9;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+		}
+		> li a:hover {
+			opacity: 0.9;
+		}
+	}
+}
+.pager.pager-fancy > li:first-child > a,
+.pager-fancy > li:first-child > span {
+    border-radius: 6px 0 0 6px;
+    margin-left: 0;
+}
+.pager.pager-fancy > li:last-child > a,
+.pager-fancy > li:last-child > span {
+    border-radius: 0 6px 6px 0;
+    margin-right: 0;
+}
+.pager.pager-fancy > li:last-child > a i,
+.pager-fancy > li:last-child > span i {
+    margin-left: 6px;
+}
+.pager.pager-fancy > li:first-child > a i,
+.pager-fancy > li:first-child > span i {
+    margin-right: 6px;
+}
+.pager.pager-rounded > li:last-child > a i,
+.pager-rounded > li:last-child > span i {
+    margin-left: 6px;
+}
+.pager.pager-rounded > li:first-child > a i,
+.pager-rounded > li:first-child > span i {
+    margin-right: 6px;
+}
+
+// Navigations
+
+.pager-modern {
+	background-color: #fbfbfb;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    i {
+    	margin: 0 10px;
+        vertical-align: middle;
+    }
+    a,
+    a:visited {
+    	color: #555;
+    }
+    a:hover {
+    	color: #111;
+    }
+    a span {
+    	cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        line-height: 59px;
+        padding: 0 4%;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transition: all 0.2s ease-out 0s;
+    }
+    span:hover {
+    	background-color: #f6f6f6;
+    }
+}
+.pager.pager-modern i {
+    color: #222;
+}
+.pager-prev {
+    text-align: left;
+}
+.pager-all {
+    text-align: center;
+}
+.pager-all i {
+    font-size: 38px;
+}
+.pager-next {
+    text-align: right;
+}

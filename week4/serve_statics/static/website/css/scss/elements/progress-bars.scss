@@ -1,0 +1,280 @@
+
+// Progress Bar
+
+.progress-bar-container {
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    background-color: #eee;
+}
+.progress-bar {
+    height: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    .progress-number,
+    .progress-type {
+    	color: #fff;
+        float: right;
+        margin-top: -2px;
+    }
+}
+.progress-title {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    text-align: left;
+    i {
+    	margin-right: 8px;
+    }
+}
+
+// Radius style 
+
+.progress-bar-container {
+	&.radius {
+		&,
+		.progress-bar {
+			border-radius: 4px;
+		}
+	}
+	// Title up style
+	&.title-up {
+		.progress-title {
+			color: #333;
+            margin-left: -10px;
+            margin-top: -32px;
+		}
+		&:not(:first-child) {
+			margin-top: 40px;
+		}
+		.progress-bar {
+			.progress-number,
+			.progress-type {
+				color: #333;
+                margin-top: -32px;
+                position: absolute;
+                right: 15px;
+			}
+			.progress-number {
+				right: 26px;
+			}
+		}
+	}
+	// Medium size 
+	&.medium {
+		height: 20px;
+		.progress-bar {
+			padding: 0;
+		}
+		.progress-title {
+			margin-left: 0;
+            margin-top: -20px;
+		}
+		.progress-bar {
+			.progress-number,
+			.progress-type {
+				margin-top: -18px;
+			}
+		}
+	}
+	// Small size
+	&.small {
+		height: 10px;
+		.progress-bar {
+			padding: 0;
+		}
+		.progress-title {
+			margin-left: 0;
+            margin-top: -20px;
+		}
+		.progress-bar {
+			.progress-number,
+			.progress-type {
+				margin-top: -18px;
+			}
+		}
+	}
+	// Progress bar no-bg
+	&.no-bg {
+		background: none !important;
+	}
+	// Progress extra small
+	&.extra-small {
+		height: 2px;
+		.progress-bar {
+			padding: 0;
+		}
+		.progress-title {
+			margin-left: 0;
+			margin-top: -20px
+		}
+		.progress-bar {
+			.progress-number,
+			.progress-type {
+				margin-top: -18px;
+			}
+		}
+	}
+	// Transparent progress bar
+	&.transparent {
+		background: none !important;
+		.progress-bar {
+			background-color: rgba(0, 0, 0, 0.35);
+		}
+		&.title-up {
+			.progress-bar {
+				.progress-title,
+				.progress-number,
+				.progress-type {
+					color: #fff;
+				}
+			}
+		}
+	}
+	// Colors
+	&.color-turquoise {
+		border-color: #1abc9c;
+        background: #1abc9c;
+	}
+	&.color-green-sea {
+		border-color: #16a085;
+        background: #16a085;
+	}
+	&.color-emerald {
+		border-color: #2ecc71;
+        background: #2ecc71;
+	}
+	&.color-nephritis {
+		border-color: #27ae60;
+        background: #27ae60;
+	}
+	&.color-peter-river {
+		border-color: #3498db;
+        background: #3498db;
+	}
+	&.color-belize-hole {
+		border-color: #2980b9;
+        background: #2980b9;
+	}
+	&.color-amethyst {
+		border-color: #9b59b6;
+        background: #9b59b6;
+	}
+	&.color-wisteria {
+		border-color: #8e44ad;
+        background: #8e44ad;
+	}
+	&.color-wet-asphalt {
+		border-color: #34495e;
+        background: #34495e;
+	}
+	&.color-midnight-blue {
+		border-color: #2c3e50;
+        background: #2c3e50;
+	}
+	&.color-sun-flower {
+		border-color: #f1c40f;
+        background: #f1c40f;
+	}
+	&.color-orange {
+		border-color: #f39c12;
+        background: #f39c12;
+	}
+	&.color-carrot {
+		border-color: #e67e22;
+        background: #e67e22;
+	}
+	&.color-pumpkin {
+		border-color: #d35400;
+        background: #d35400;
+	}
+	&.color-alizarin {
+		border-color: #e74c3c;
+        background: #e74c3c;
+	}
+	&.color-pomegranate {
+		border-color: #c0392b;
+        background: #c0392b;
+	}
+	&.color-clouds {
+		border-color: #ecf0f1;
+        background: #ecf0f1;
+	}
+	&.color-silver {
+		border-color: #bdc3c7;
+        background: #bdc3c7;
+	}
+	&.color-concrete {
+		border-color: #95a5a6;
+        background: #95a5a6;
+	}
+	&.color-asbestos {
+		border-color: #7f8c8d;
+        background: #7f8c8d;
+	}
+}
+.progress-bar {
+	&.color-turquoise {
+		background: #1abc9c;
+	}
+	&.color-green-sea {
+		background: #16a085;
+	}
+	&.color-emerald {
+		background: #2ecc71;
+	}
+	&.color-nephritis {
+		background: #27ae60;
+	}
+	&.color-peter-river {
+		background: #3498db;
+	}
+	&.color-belize-hole {
+		background: #2980b9;
+	}
+	&.color-amethyst {
+		background: #9b59b6;
+	}
+	&.color-wisteria {
+		background: #8e44ad;
+	}
+	&.color-wet-asphalt {
+		background: #34495e;
+	}
+	&.color-midnight-blue {
+		background: #2c3e50;
+	}
+	&.color-sun-flower {
+		background: #f1c40f;
+	}
+	&.color-orange {
+		background: #f39c12;
+	}
+	&.color-carrot {
+		background: #e67e22;
+	}
+	&.color-pumpkin {
+		background: #d35400;
+	}
+	&.color-alizarin {
+		background: #e74c3c;
+	}
+	&.color-pomegranate {
+		background: #c0392b;
+	}
+	&.color-clouds {
+		background: #ecf0f1;
+	}
+	&.color-silver {
+		background: #bdc3c7;
+	}
+	&.color-concrete {
+		background: #95a5a6;
+	}
+	&.color-asbestos {
+		background: #7f8c8d;
+	}
+}

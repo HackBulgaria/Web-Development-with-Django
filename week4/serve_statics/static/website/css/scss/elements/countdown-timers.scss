@@ -1,0 +1,167 @@
+$white: #fff;
+$light-grey: #eee;
+
+// Countdown timer
+
+
+.countdown-container {
+    display: table;
+    margin: 0 auto;
+}
+
+.countdown {
+	color: #333;
+	overflow: hidden;
+	.countdown-box {
+		display: block;
+        float: left;
+        margin: 30px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: auto;
+	}
+	.number {
+		font-size: 80px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-align: center;
+	}
+	span {
+		display: block;
+        font-family: "Open Sans", sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        overflow: hidden;
+        padding-top: 10px;
+        position: relative;
+        text-align: center;
+        &:before {
+        	background: none repeat scroll 0 0 #333;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;
+        }
+	}
+	// Circle Style
+	&.circle {
+		.countdown-box {
+			border: 3px solid #333;
+            border-radius: 50%;
+            color: #333;
+            height: 160px;
+            padding: 34px 5px 0 0;
+            width: 160px;
+            margin: 20px 15px;
+            .number {
+            	font-size: 52px;
+            	font-weight: 800px;
+            }
+            span {
+            	font-size: 18px;
+            }
+		}
+	}
+	// Rectangle style
+	&.rectangle {
+		.countdown-box {
+			border: 4px solid;
+            padding: 24px;
+            width: 170px;
+            margin-left: 15px;
+            margin-right: 15px;
+            .number {
+            	font-size: 52px;
+            	font-weight: 600;
+            }
+            span {
+            	font-size: 18px;
+            }
+		}
+	}
+	// Medium size
+	&.medium,
+	&.circle.medium,
+	&.rectangle.medium {
+		.countdown-box {
+			height: 130px;
+            margin: 10px;
+            padding: 20px 4px 0 0;
+            width: 130px;
+		}
+		.number {
+			font-size: 44px;
+			margin-bottom: 12px;
+		}
+		span {
+			font-size: 18px;
+		}
+	}
+	&.circle.medium,
+	&.rectangle.medium {
+		.countdown-box {
+			border: solid 2px;
+		}
+	}
+	// Small size
+	&.small,
+	&.circle.small,
+	&.rectangle.small {
+		.countdown-box {
+			margin: 10px;
+            height: 70px;
+            padding: 10px 0px 0 0;
+            width: 70px;
+            margin: 5px 5px;
+		}
+		.number {
+			font-size: 16px;
+			margin-bottom: 6px;
+		}
+		span {
+			font-size: 14px;
+			padding-top: 2px;
+		}
+	}
+	&.circle.small,
+	&.rectangle.small {
+		.countdown-box {
+			border: solid 2px;
+		}
+	}
+	// Light & Dark
+	&.light .countdown-box {
+		border-color: $white;
+		color: $white;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	}
+	&.countdown-light {
+		span:before {
+			background: $white;
+		}
+		span,
+		.number {
+			color: $white !important;
+		}
+		&.circle .countdown-box {
+			border-color: $white;
+		}
+		&.rectangle .countdown-box {
+			border-color: $white;
+		}
+	}
+	&.countdown-dark {
+		span,
+		.number {
+			color: #000 !important;
+		}
+	}
+}

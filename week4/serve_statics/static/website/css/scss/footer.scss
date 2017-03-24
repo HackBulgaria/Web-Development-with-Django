@@ -1,0 +1,133 @@
+$white: #fff;
+$light-grey: #ccc;
+
+
+/* ----------------------------------------------------------------
+    FOOTER
+-----------------------------------------------------------------*/
+
+#footer {
+    clear: both;
+    position: relative;
+    .logo {
+    	margin-bottom: 54px;
+    	margin-top: 12px;
+    	max-width: 80px;
+    }
+}
+.footer-logo {
+	border-right: 1px solid #333;
+	margin-bottom: 20px;
+	margin-right: 18px;
+	padding-right: 16px;
+}
+#footer {
+	&.background-colored .footer-logo {
+		border-right: 1px solid rgba(255, 255, 255, 0.4);
+	}
+	&.background-grey .footer-logo {
+		border-right: 1px solid #ccc;
+	}
+}
+.footer-content {
+	padding: 60px 0 40px 0;
+	.widget-title {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 21px;
+	}
+}
+.copyright-content {
+	border-top: 1px solid #222;
+	min-height: 80px;
+	padding: 30px 0;
+}
+footer.background-grey .copyright-content {
+	border-top: 1px solid #ddd;
+}
+.copyright-links a {
+	padding: 10px;
+}
+.copyright-text {
+	font-size: 12px;
+	padding-top: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+#footer-outer {
+	.widget h4,
+	.col .widget_recent_entries span,
+	.col .recent_posts_extra_widget .post-widget-text span { 
+		color: #999 !important;
+	}
+	&,
+	a {
+		color: #666 !important;
+	}
+}
+
+// Social Icons
+
+#footer {
+	.social-icons {
+		float: right;
+		&.center {
+			float: none;
+			display: inline-block;
+		}
+		&:not(.social-icons-colored) li a:hover {
+			background-color: transparent;
+		}
+	}
+	// Footer light version
+	&.footer-light {
+		background-color: #f6f6f6;
+		border-top: 1px solid #e5e5e5;
+		&,
+		a {
+			color: #898989 !important;
+		}
+		.widget h4,
+		span {
+			color: #494949 !important;
+		}
+		.copyright-content {
+			background-color: #f5f5f5;
+			.to-top {
+				background-color: #f5f5f5;
+                border: 1px solid #e5e5e5;
+                border-radius: 3px;
+                float: right;
+                line-height: 24px;
+                padding: 4px 9px;
+                position: relative;
+                &:hover {
+                	opacity: 0.9;
+                }
+                &:hover,
+                &:focus {
+                	color: #333;
+                }
+			}
+		}
+	}
+	// Footer Dark Version 
+	&.footer-dark {
+		background-color: #101010;
+		border-top: 1px solid #222;
+		&,
+		a {
+			color: #666 !important;
+		}
+		.widget h4,
+		span {
+			color: #999 !important;
+		}
+		.copyright-content {
+			border-top: 1px solid #222;
+			min-height: 80px;
+			padding: 30px 0;
+			background-color: #1a1a1a;
+		}
+	}
+}

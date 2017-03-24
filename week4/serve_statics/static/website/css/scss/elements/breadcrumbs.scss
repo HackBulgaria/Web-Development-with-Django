@@ -1,0 +1,178 @@
+/* ----------------------------------------------------------------------
+Breadcrumbs
+-------------------------------------------------------------------------*/
+
+.breadcrumb {
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.3em;
+  margin-bottom: 0;
+  margin-top: 16px;
+  text-align: right;
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    color: #888;
+  }
+  li + li:before {
+    content: "\f105";
+    padding: 0 5px;
+    font-family: FontAwesome;
+  }
+  &.fancy {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.3em;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 14px;
+    li {
+      line-height: 32px;
+      margin: 0 2px 0 10px;
+      + li:before {
+        content: none;
+      }
+    }
+  }
+  &.radius li + li:before {
+    content: none;
+  }
+  &.fancy {
+    li:first-child i {
+      margin-right: -6px;
+    }
+    a {
+      background: #eee;
+      padding: .7em 1em;
+      text-decoration: none;
+      position: relative;
+      &:hover {
+        background: #ddd;
+        color: #333;
+      }
+    }
+    .active a {
+      background: #ddd;
+      color: #333;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -1.5em;
+      border-width: 1.5em 0 1.5em 1.1em;
+      border-style: solid;
+      border-color: #eee #eee #eee transparent;
+      left: -1em;
+    }
+    li:first-child {
+      margin: 0 2px 0 0;
+      a::before {
+        border-width: 0;
+      }
+    }
+    a:hover::before, .active a:before {
+      border-color: #ddd #ddd #ddd transparent;
+    }
+    a {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5em;
+        border-top: 1.5em solid transparent;
+        border-bottom: 1.5em solid transparent;
+        border-left: 1em solid #eee;
+        right: -1em;
+      }
+      &:hover::after {
+        border-left-color: #ddd;
+      }
+    }
+    .active a:after {
+      border-left-color: #ddd;
+    }
+  }
+  &.radius {
+    background: transparent;
+    overflow: hidden;
+    font-size: 12px;
+    li {
+      margin-right: 16px;
+    }
+    a:hover, .active a {
+      background: #ddd;
+      color: #333;
+    }
+    a, .active a {
+      background: #eee;
+      padding: 4px 8px;
+      text-decoration: none;
+      position: relative;
+    }
+    a {
+      &:hover {
+        background: #ddd;
+      }
+      &::before, &::after {
+        background: none repeat scroll 0 0 #eee;
+        bottom: 0;
+        content: "";
+        height: 25px;
+        position: absolute;
+        top: 0;
+        -webkit-transform: skew(-8deg);
+        -ms-transform: skew(-8deg);
+        transform: skew(-8deg);
+        width: 10px;
+      }
+      &::before {
+        left: -.5em;
+        border-radius: 5px 0 0 5px;
+      }
+      &:hover::before {
+        background: #ddd;
+      }
+      &::after {
+        right: -.5em;
+        border-radius: 0 5px 5px 0;
+      }
+      &:hover::after {
+        background: #ddd;
+      }
+    }
+    .active:hover {
+      background: #ddd;
+    }
+    a:hover::after, .active a:after {
+      border-left-color: #ddd;
+    }
+  }
+}
+
+/*fancy style*/
+
+/*radius breadcrumb*/
+
+body {
+  &.device-sm .breadcrumb, &.device-xs .breadcrumb, &.device-xxs .breadcrumb {
+    text-align: left !important;
+    clear: both;
+  }
+  &.device-sm .page-title-right .breadcrumb, &.device-xs .page-title-right .breadcrumb, &.device-xxs .page-title-right .breadcrumb {
+    text-align: right !important;
+    clear: both;
+    padding-top: 14px !important;
+  }
+  &.device-sm .page-title-center .breadcrumb, &.device-xs .page-title-center .breadcrumb, &.device-xxs .page-title-center .breadcrumb {
+    text-align: center !important;
+    clear: both;
+  }
+}

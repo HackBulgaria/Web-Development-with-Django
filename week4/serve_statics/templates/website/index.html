@@ -1,3 +1,433 @@
 {% load static %}
 
-<img src="{% static 'website/hackbulgaria_logo.png' %}" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	
+	<link rel="shortcut icon" href="images/favicon.png">
+	<title>POLO | The Multi-Purpose HTML5 Template</title>
+
+	<!-- Bootstrap Core CSS -->
+  <link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+	<!-- Vendor css -->
+  <link href="{% static 'owlcarousel/owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+  <link href="{% static 'magnific-popup/dist/magnific-popup.css' %}" rel="stylesheet">
+
+	<!-- Template base -->
+
+	<!-- Template elements -->
+  <link href="{% static 'website/css/theme-elements.css' %}" rel="stylesheet">	
+	
+<!-- Responsive classes -->
+  <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
+
+
+	<!-- Template color -->
+  <link href="{% static 'website/css/color-variations/blue.css' %}" rel="stylesheet" type="text/css" media="screen" title="blue">
+
+	<!-- LOAD GOOGLE FONTS -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+
+	<!-- BLOG FONT & STYLE -->
+	<link href="http://fonts.googleapis.com/css?family=Damion" rel="stylesheet" type="text/css">
+  <link href="{% static 'website/css/style-blog.css' %}" media="screen" rel="stylesheet" type="text/css" />
+
+    <!--VENDOR SCRIPT-->
+    <script src="{% static 'jquery/dist/jquery.js' %}"></script>
+
+</head>
+
+<body class="wide">
+	<!--SITE LOADER-->
+	<div class="loader-wrapper">
+    <div class="loader"> <img width="40" src="{% static 'website/images/svg-loaders/puff.svg' %}" alt=""> <span class="loader-title">Page is loading, just a sec...</span> </div>
+	</div>
+	<!--END: SITE LOADER-->
+
+	<!--WRAPPER-->
+	<div class="wrapper">
+		<!--HEADER-->
+		<header id="header" class="header-mini header-dark">
+			<div id="header-wrap">
+				<div class="container">
+
+					<!--LOGO-->
+					<div id="logo">
+            <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png"> <img src='{% static "website/images/logo.png" %}' alt="Polo Logo"> </a>
+					</div>
+					<!--END: LOGO-->
+
+					<!--MOBILE MENU -->
+					<div class="nav-main-menu-responsive">
+						<button class="lines-button x">
+							<span class="lines"></span>
+						</button>
+					</div>
+					<!--END: MOBILE MENU -->
+
+					<!--TOP SEARCH -->
+					<div id="top-search"> <a id="top-search-trigger"><i class="fa fa-search"></i><i class="fa fa-close"></i></a>
+						<form action="search-results-page.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Start typing & press  &quot;Enter&quot;">
+						</form>
+					</div>
+					<!--END: TOP SEARCH -->
+
+					<!--NAVIGATION-->
+					<div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+						<div class="container">
+							<nav class="main-menu mega-menu" id="mainMenu">
+								<ul class="main-menu nav nav-pills">
+									<li><a href="index.html"><i class="fa fa-home"></i></a> </li>
+									<li class="dropdown"> <a href="#">About </a> </li>
+									<li class="dropdown"> <a href="#">Blog</a> </li>
+									<li class="dropdown"> <a href="#">Contact</a> </li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<!--END: NAVIGATION-->
+				</div>
+			</div>
+		</header>
+		<!--END: HEADER-->
+
+<!-- CONTENT -->
+<section class="p-t-40">
+	<div class="container">
+		<div class="row">
+			<!-- Blog post-->
+			<div class="post-content post-thumbnail col-md-9">
+				<!-- Blog image post-->
+				<div class="post-item">
+					<div class="post-image">
+						<a href="#">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+						</a>
+					</div>
+					<div class="post-content-details">
+						<div class="post-title">
+							<h3><a href="#">Image post example</a></h3>
+						</div>
+						<div class="post-info">
+							<span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+							<span class="post-category">in <a href="#">Productivity</a></span>
+						</div>
+						<div class="post-description">
+							<p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus accumsan dignissim quis quis urna.</p>
+
+							<div class="post-read-more">
+								<a class="read-more" href="blog-post.html">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="post-meta">
+						<div class="post-date">
+							<span class="post-date-day">16</span>
+							<span class="post-date-month">January</span>
+							<span class="post-date-year">2015</span>
+						</div>
+
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-comments-o"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-share-alt"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Blog slider post-->
+				<div class="post-item">
+
+					<div class="post-slider">
+						<div class="carousel" data-carousel-col="1">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+						</div>
+					</div>
+
+					<div class="post-content-details">
+						<div class="post-title">
+							<h3><a href="#">Slider post demo</a></h3>
+						</div>
+						<div class="post-info">
+							<span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+							<span class="post-category">in <a href="#">Productivity</a></span>
+						</div>
+						<div class="post-description">
+							<p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus accumsan dignissim quis quis urna.</p>
+
+							<div class="post-read-more">
+								<a class="read-more" href="blog-post.html">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="post-meta">
+						<div class="post-date">
+							<span class="post-date-day">16</span>
+							<span class="post-date-month">January</span>
+							<span class="post-date-year">2015</span>
+						</div>
+
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-comments-o"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-share-alt"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Blog image post-->
+				<div class="post-item">
+					<div class="post-image">
+						<a href="#">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+						</a>
+					</div>
+					<div class="post-content-details">
+						<div class="post-title">
+							<h3><a href="#">Image post example</a></h3>
+						</div>
+						<div class="post-info">
+							<span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+							<span class="post-category">in <a href="#">Productivity</a></span>
+						</div>
+						<div class="post-description">
+							<p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus accumsan dignissim quis quis urna.</p>
+
+							<div class="post-read-more">
+								<a class="read-more" href="blog-post.html">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="post-meta">
+						<div class="post-date">
+							<span class="post-date-day">16</span>
+							<span class="post-date-month">January</span>
+							<span class="post-date-year">2015</span>
+						</div>
+
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-comments-o"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-share-alt"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Blog image post-->
+				<div class="post-item">
+					<div class="post-image">
+						<a href="#">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+						</a>
+					</div>
+					<div class="post-content-details">
+						<div class="post-title">
+							<h3><a href="#">Image post example</a></h3>
+						</div>
+						<div class="post-info">
+							<span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+							<span class="post-category">in <a href="#">Productivity</a></span>
+						</div>
+						<div class="post-description">
+							<p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus accumsan dignissim quis quis urna.</p>
+
+							<div class="post-read-more">
+								<a class="read-more" href="blog-post.html">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="post-meta">
+						<div class="post-date">
+							<span class="post-date-day">16</span>
+							<span class="post-date-month">January</span>
+							<span class="post-date-year">2015</span>
+						</div>
+
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-comments-o"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-share-alt"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Blog image post-->
+				<div class="post-item">
+					<div class="post-image">
+						<a href="#">
+              <img alt="" src="{% static 'website/images/blog/thumb/1.jpg' %}">
+						</a>
+					</div>
+					<div class="post-content-details">
+						<div class="post-title">
+							<h3><a href="#">Image post example</a></h3>
+						</div>
+						<div class="post-info">
+							<span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+							<span class="post-category">in <a href="#">Productivity</a></span>
+						</div>
+						<div class="post-description">
+							<p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus accumsan dignissim quis quis urna.</p>
+
+							<div class="post-read-more">
+								<a class="read-more" href="blog-post.html">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="post-meta">
+						<div class="post-date">
+							<span class="post-date-day">16</span>
+							<span class="post-date-month">January</span>
+							<span class="post-date-year">2015</span>
+						</div>
+
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-comments-o"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+						<div class="post-comments">
+							<a href="#">
+								<i class="fa fa-share-alt"></i>
+								<span class="post-comments-number">324</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<a class="button border small rounded" href="#">Older posts</a>
+			</div>
+			<!-- END: Blog post-->
+
+			<!-- Sidebar-->
+			<div class="sidebar col-md-3">
+
+
+				<!--widget blog articles-->
+				<div class="widget clearfix widget-blog-articles">
+					<h4 class="widget-title">From our Blog</h4>
+					<ul class="list-posts list-medium">
+						<li><a href="#">Printing and typesetting</a>
+							<small>Jun 18 2015</small>
+						</li>
+						<li><a href="#">Lorem Ipsum has been the industry's</a><small>Jun 18 2015</small>
+						</li>
+						<li><a href="#">Ipsum and typesetting</a><small>Jun 18 2015</small>
+						</li>
+						<li><a href="#">Specimen book</a><small>Jun 18 2015</small>
+						</li>
+
+					</ul>
+				</div>
+				<!--end: widget blog articles-->
+
+				<!--widget categories-->
+				<div class="widget clearfix widget-categories">
+					<h4 class="widget-title">Our Services</h4>
+					<ul class="list list-arrow-icons">
+						<li> <a title="" href="#">Development </a> </li>
+						<li> <a title="" href="#">Branding </a> </li>
+						<li> <a title="" href="#">Marketing </a> </li>
+						<li> <a title="" href="#">Branding </a> </li>
+						<li> <a title="" href="#">Strategy solutions</a> </li>
+						<li> <a title="" href="#">Copywriting </a> </li>
+					</ul>
+				</div>
+				<!--end: widget categories-->
+
+				<!--widget contact us-->
+					<h4 class="widget-title">Contact us</h4>
+					<ul class="list-large list-icons">
+						<li><i class="fa fa-map-marker"></i>
+							<strong>Address:</strong> 795 Folsom Ave, Suite 600
+							<br>San Francisco, CA 94107</li>
+						<li><i class="fa fa-phone"></i><strong>Phone:</strong> (123) 456-7890 </li>
+						<li><i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:first.last@example.com">first.last@example.com</a>
+						</li>
+						<li><i class="fa fa-clock-o"></i>Monday - Friday: <strong>08:00 - 22:00</strong>
+							<br>Saturday, Sunday: <strong>Closed</strong>
+						</li>
+					</ul>
+				</div>
+				<!--end: widget contact us-->
+
+				<!--widget blockquote -->
+				<div class="widget clearfix widget-blockquote">
+					<h4 class="widget-title">Blockquote widget</h4>
+					<blockquote class="blockquote-simple">
+						<p>Art is the only serious thing in the world. And the artist is the only person who is never serious.</p>
+						<small>by <cite>Oscar Wilde</cite></small>
+					</blockquote>
+				</div>
+				<!--end: widget blockquote -->
+
+			</div>
+			<!-- END: Sidebar-->
+		</div>
+	</div>
+</section>
+<!-- END: SECTION -->
+
+<!-- FOOTER -->
+<footer class="background-dark text-grey" id="footer">
+	<div class="copyright-content">
+		<div class="container">
+			<div class="row">
+				<div class="copyright-text text-center"> &copy; 2016 POLO - Best HTML5 Template Ever. All Rights Reserved. <a target="_blank" href="http://www.inspiro-media.com">INSPIRO</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END: FOOTER -->
+	</div>
+	<!-- END: WRAPPER -->
+
+	<!-- GO TOP BUTTON -->
+	<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- Theme Base, Components and Settings -->
+  <script src="{% static 'website/js/theme-functions.js' %}"></script>
+
+	<!-- Custom js file -->
+  <script src="{% static 'website/js/custom.js' %}"></script>
+</body>
+
+</html>

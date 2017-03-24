@@ -1,0 +1,169 @@
+
+// Seperator
+
+.seperator,
+.separator{
+    color: #ccc;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2em;
+}
+.seperator-simple {
+    margin: 10px auto;
+}
+
+.seperator::before,
+.seperator::after,
+.separator::before,
+.separator::after{
+    border-bottom: 1px solid #eee;
+    content: "";
+    display: inline-block;
+    height: 0.65em;
+    margin: 0 -4px 0 -100%;
+    vertical-align: top;
+    width: 50%;
+}
+
+.seperator.seperator-dark::before,
+.seperator.seperator-dark::after,
+.separator.seperator-dark::before,
+.separator.seperator-dark::after{
+    border-bottom: 1px solid #333 !important;
+}
+.seperator.seperator-grey::before,
+.seperator.seperator-grey::after,
+.separator.seperator-grey::before,
+.separator.seperator-grey::after{
+    border-bottom: 1px solid #ccc;
+}
+.seperator.seperator-light::before,
+.seperator.seperator-light::after,
+.separator.seperator-light::before,
+.separator.seperator-light::after {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.seperator::after,
+.separator::after{
+    margin: 0 -100% 0 0;
+}
+.seperator i,
+.separator i {
+    font-size: 18px;
+}
+.seperator i,
+.seperator span,
+.seperator a,
+.separator i,
+.separator span,
+.separator a{
+    margin: 0 20px 0 24px;
+    display: inline-block;
+}
+
+// Dotted style
+.seperator.dotted:before,
+.seperator.dotted:after,
+.separator.dotted:before,
+.separator.dotted:after{
+    border-bottom: 2px dotted #ccc;
+}
+
+// Seperator left icon
+
+.seperator.seperator-left,
+.separator.seperator-left {
+    float: left;
+    margin: 2px 36px 0 0;
+}
+.seperator.left i,
+.separator.left i{
+    float: left;
+    margin: 2px 36px 0 0;
+}
+
+// Seperator right icon
+
+.seperator.right i,
+.separator.right i {
+    float: right;
+    margin: 0 0 2px 36px;
+}
+
+// Seperator Bold
+
+.seperator.seperator-bold:before,
+.seperator.seperator-bold:after,
+.separator.seperator-bold:before,
+.separator.seperator-bold:after{
+    border-bottom-width: 6px;
+}
+
+// Seperator sizes
+
+.seperator.seperator-small,
+.separator.seperator-small {
+    width: 10%;
+    margin: 5px auto;
+}
+.seperator.seperator-medium,
+.separator.seperator-medium{
+    width: 20%;
+    margin: 10px auto;
+}
+.text-seperator {
+    background-color: #111;
+    display: block;
+    height: 4px;
+    margin: 20px 0;
+}
+.text-seperator-small {
+    width: 10%;
+}
+.text-seperator-medium {
+    width: 30%;
+}
+.text-seperator-large {
+    width: 60%;
+}
+
+.seperator.seperator-image:before,
+.seperator.seperator-image:after,
+.separator.seperator-image:before,
+.separator.seperator-image:after {
+    border: 0;
+}
+.seperator.seperator-image,
+.separator.seperator-image {
+    background-position: center center;
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+.seperator.seperator-over-top,
+.separator.seperator-over-top {
+    margin-bottom: -17px;
+    position: relative;
+    top: -13px !important;
+}
+
+.triangle-divider-bottom {
+    background-image: url("../images/triangle-divider-down.png");
+    background-position: left center;
+    background-repeat: repeat-x;
+    bottom: 0;
+    height: 12px;
+    position: absolute;
+    width: 100%;
+}
+.triangle-divider-top {
+    background-image: url("../images/triangle-divider-top.png");
+    background-position: left center;
+    background-repeat: repeat-x;
+    top: 0;
+    height: 12px;
+    position: absolute;
+    width: 100%;
+}

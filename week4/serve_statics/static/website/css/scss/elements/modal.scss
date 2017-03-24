@@ -1,0 +1,22 @@
+
+// Modal
+
+.modal-content {
+    border-radius: 4px;
+    padding: 10px;
+}
+.modal-title::after {
+    border-top: 1px solid #eee;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 16px 0 -12px;
+    width: 100%;
+}
+.modal-header,
+.modal-footer {
+    border: none;
+}
+.modal-backdrop {
+    bottom: 0;
+}

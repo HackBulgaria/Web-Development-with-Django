@@ -1,0 +1,187 @@
+
+// Lists
+
+dl,
+ol,
+ul {
+	padding-bottom: 0;
+    padding-left: 20px;
+}
+ol {
+	padding-left: 1.6em;
+	li {
+		padding-left: 6px;
+	}
+}
+.list-unstyled ul li {
+    list-style: none;
+}
+
+/*
+
+ul.icon-list,
+ol.icon-list,
+ul.list,
+ol.list {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    list-style: none;
+    padding-left: 0;
+}
+*/
+
+.list {
+    clear: both;
+    display: block;
+    position: relative;
+}
+.list-lines,
+.list-icons,
+.list-simple,
+.list-posts,
+.list ul {
+    padding: 0px;
+}
+.list,
+.list-lines,
+.list-icons,
+.list-simple,
+.list-posts,
+.list-tweets li {
+    list-style: none;
+}
+.list-icons li,
+.list-arrow-icons li,
+.list-tweets li {
+    padding-left: 22px;
+}
+.list-arrow-icons li:before {
+    margin-left: -18px;
+    position: absolute;
+    font-family: fontawesome;
+    content: "\f105";
+}
+.widget-tweeter {
+	li {
+		&:before,
+		&:before {
+			margin-left: -18px;
+            position: absolute;
+            font-family: fontawesome;
+            content: "\f099";
+		}
+	}
+}
+.list-tweets .list-tweets-date,
+.widget-tweeter .tweets_txt > span,
+.widget-twitter .tweets_txt > span {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.list-icons li i {
+    font-size: 14px;
+    margin-left: -22px;
+    margin-right: 6px;
+    top: 0;
+}
+.list-lines {
+	li {
+		border-bottom: 1px solid #ddd;
+        padding: 10px 0 10px 2px;
+        &:last-child {
+        	border-bottom: 0px;
+        }
+	}
+}
+.background-dark .list-lines li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.list-medium li {
+    margin: 12px 0;
+}
+.list-large li {
+    margin: 18px 0;
+}
+.list-large,
+.list-medium {
+	li {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.list-posts small {
+    display: block;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.list-check {
+	list-style: outside none none;
+    margin-bottom: 20px;
+    li {
+    	margin-bottom: 10px;
+    	&:last-child {
+    		margin-bottom: 0;
+    	}
+    	&::before {
+    		color: #333;
+            content: "\f00c";
+            display: inline-block;
+            font-family: fontawesome;
+            font-size: 18px;
+            height: 20px;
+            line-height: 19px;
+            margin-right: 10px;
+            padding-left: 2px;
+            text-align: center;
+            vertical-align: middle;
+            width: 20px;
+    	}
+    }
+    &.default li::before {
+    	border: 2px solid #fe5e3e;
+        color: #fe5e3e;
+    }
+    &.blue li::before {
+    	border: 2px solid #00d2ed;
+        color: #00d2ed;
+    }
+    &.green li::before {
+    	border: 2px solid #00e095;
+        color: #00e095;
+    }
+}
+
+.list-arrow {
+	list-style: outside none none;
+    margin-bottom: 20px;
+    padding: 0px;
+    li {
+    	margin-bottom: 10px;
+    	&:last-child {
+    		margin-bottom: 0;
+    	}
+    	&::before {
+    		border-radius: 50%;
+            color: #333;
+            content: "";
+            display: inline-block;
+            font-family: fontawesome;
+            content: "\f18e";
+            font-size: 18px;
+            height: 20px;
+            line-height: 19px;
+            margin-right: 10px;
+            padding-left: 2px;
+            text-align: center;
+            vertical-align: middle;
+            width: 20px;
+    	}
+    }
+}

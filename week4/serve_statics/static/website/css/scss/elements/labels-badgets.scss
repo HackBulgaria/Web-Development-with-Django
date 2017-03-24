@@ -1,0 +1,16 @@
+
+// Lables & Badgets
+
+.label-default {
+    background: -webkit-linear-gradient(top, #f37054 0px, #e66346 100%) repeat scroll 0 0 #e66346;
+    background: linear-gradient(to bottom, #f37054 0px, #e66346 100%) repeat scroll 0 0 #e66346;
+    color: #ffffff;
+}
+.main-menu .label,
+.sidebar-menu .label {
+    padding: 1px 3px;
+    margin: 0 3px;
+}
+.badge {
+    margin-right: 10px;
+}

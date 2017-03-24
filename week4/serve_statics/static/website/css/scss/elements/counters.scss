@@ -1,0 +1,62 @@
+$white: #fff;
+$light-grey: #eee;
+
+// Counters
+
+.counter {
+	margin-bottom: 20px;
+	span {
+		font-size: 50px;
+		line-height: 40px;
+	}
+	&.small {
+		> span {
+			font-size: 32px !important;
+		}
+	}
+	&.medium {
+		> span {
+			font-size: 50px !important;
+		}
+	}
+	&.large {
+		> span {
+			font-size: 62px !important;
+		}
+	}
+}
+.icon-box {
+	&.fancy {
+		> .counter span {
+			margin: 0 12px 10px 56px;
+		}
+		&.medium {
+			> .counter span {
+				margin: 0 12px 10px 80px;
+			}
+		}
+	}
+	&.effect {
+		&:not(.center) {
+			> .counter span {
+				margin: 0 12px 10px 82px;
+			}
+		}
+		&.large:not(.center) {
+			> .counter span {
+				margin: 0 12px 10px 107px;
+			}
+		}
+		&.medium:not(.center) {
+			> .counter span {
+				margin: 0 12px 10px 82px
+			}
+		}
+		&.small:not(.center) {
+			> .counter span {
+				margin: 0 12px 10px 58px;
+				font-size: 32px !important;
+			}
+		}
+	}
+}

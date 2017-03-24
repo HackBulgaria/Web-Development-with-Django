@@ -1,0 +1,201 @@
+
+// Testimonials
+
+.testimonial {
+	border: 0;
+	.testimonial-description {
+		background-color: #f8f8f8;
+        border-radius: 4px;
+        min-height: 160px;
+        padding: 0px;
+        position: relative;
+        > p {
+        	padding: 20px 20px 16px;
+        }
+	}
+	.testimonial-image {
+		margin-left: 20px;
+        margin-top: -20px;
+        padding-top: 18px;
+        position: relative;
+        img {
+        	border: 4px solid #e3e3e3;
+            float: left;
+            margin-right: 18px !important;
+            margin-top: -18px !important;
+            position: relative;
+        }
+        h4 {
+        	margin-bottom: 0;
+        }
+	}
+}
+
+// Carousel
+
+.testimonial .testimonial-image img,
+.owl-carousel .owl-item .testimonial .testimonial-image img {
+    margin: 0 auto;
+    width: 80px;
+}
+.carousel {
+	.testimonial-video-button {
+		width: 28px;
+		a {
+		    margin-top: 5px;
+		    i {
+		    	font-size: 34px;
+		    }
+
+		}
+	}
+	&.testimonial.testimonial-card .testimonial-image img {
+		margin: 0 auto !important;
+	}
+}
+
+// Video button 
+
+.testimonial-video-button {
+	float: right;
+    height: 44px;
+    margin-bottom: -42px;
+    margin-right: 12px;
+    position: relative;
+    width: 44px;
+    z-index: 1;
+    > a {
+    	margin-top: -24px;
+        position: absolute;
+    }
+    i {
+    	color: #444;
+        font-size: 50px;
+        &:hover {
+        	opacity: 0.9;
+        }
+    }
+}
+
+// Card
+
+.testimonial {
+	&.testimonial-card {
+		border: 1px solid #e3e3e3;
+        border-radius: 2px;
+        position: relative;
+        margin-bottom: 20px;
+        .testimonial-image {
+        	background-color: #fbfbfb;
+            border-bottom: 1px solid #ddd;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 20px 20px 10px;
+            text-align: center;
+            img {
+            	border: 4px solid #e3e3e3;
+                float: none;
+                margin-right: 0 !important;
+                margin-top: 0 !important;
+            }
+            .testimonial-name {
+            	font-weight: 700;
+                padding: 10px 0 0;
+                text-align: center;
+            }
+        }
+        .testimonial-description {
+        	background-color: #fff;
+        }
+	}
+}
+.carousel .testimonial.testimonial-card .testimonial-video-button > a {
+    margin-top: -18px;
+}
+
+// Transparent
+
+.testimonial {
+	&.testimonial-transparent {
+		.testimonial-description {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		.testimonial-video-button {
+			color: #fff;
+		}
+	}
+	// Simple
+	&.testimonial-simple {
+		text-align: center;
+		.testimonial-image {
+			margin-left: 0px !important;
+            margin-top: 0px !important;
+            padding-top: 18px;
+		}
+		.testimonial-description {
+			background-color: transparent !important;
+            min-height: 0 !important;
+		}
+		.testimonial-video-button {
+			display: block;
+            float: none;
+            margin: 0 auto;
+            position: relative;
+            a i {
+            	margin-left: -14px;
+            }
+		}
+	}
+}
+.testimonial.testimonial-simple .testimonial-image img,
+.owl-carousel .owl-item .testimonial.testimonial-simple .testimonial-image img {
+    margin: 0 auto !important;
+    width: 120px;
+    float: none;
+    margin-top: 6px !important;
+}
+.text-light {
+	.testimonial {
+		.testimonial-video-button a i,
+		.testimonial-description p:before,
+		.testimonial-description p:after {
+			color: #fff;
+		}
+	}
+}
+.testimonials {
+	.testimonial-item {
+		text-align: center;
+		> img {
+			float: none;
+            margin: 0 auto 20px;
+            display: block;
+            height: 72px !important;
+            width: 72px !important;
+            border-radius: 50%;
+		}
+		> p {
+			font-size: 16px;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+		}
+		> span {
+			color: #ccc;
+		}
+	}
+	// Left aligned
+	&.testimonials-left {
+		.testimonial-item {
+			text-align: left;
+			> img {
+				float: left;
+                margin: 0;
+                display: inherit;
+			}
+			> p,
+			> span {
+				margin-left: 90px;
+			}
+		}
+	}
+}

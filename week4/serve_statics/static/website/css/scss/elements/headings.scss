@@ -1,0 +1,383 @@
+
+/* ----------------------------------------------------------------------
+	Headings
+-------------------------------------------------------------------------*/
+
+
+ @import '../variables.scss';
+
+
+// Heading fancy
+
+.heading-fancy {
+	position: relative;
+	margin-bottom: 30px;
+	clear: both;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		background-color: #FFF;
+        padding-right: 15px;
+        margin-bottom: 0;
+        position: relative;
+        display: inline-block;
+	}
+	h4,
+	h5,
+	h6 {
+		padding-right: 10px;
+	}
+	// Heading Line
+	&.heading-line:before {
+		content: '';
+        position: absolute;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid #E5E5E5;
+        left: auto;
+        top: 49%;
+        right: 0;
+	}
+	&.text-center {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding-left: 15px;
+		}
+	}
+	&.text-right {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding-left: 15px;
+			padding-right: 0;
+		}
+	}
+}
+
+// Heading jumbo
+
+.heading-jumbo {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 0.2em;
+}
+.heading-title-border-bottom {
+    border-bottom: 1px solid;
+    border-bottom-color: #e7e7e7;
+}
+.heading-title-simple {
+	margin-bottom: 30px;
+    display: block;
+    padding: 0 0 10px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    	margin-bottom: 0;
+        position: relative;
+    }
+}
+
+// HR title
+
+.hr-title {
+	border-top-style: solid;
+    border-top-width: 1px;
+    font-size: 16px;
+    text-align: center;
+    height: 10px;
+    line-height: 20px;
+    margin: 10px 0;
+    height: auto;
+    color: #bbbbbb;
+    abbr {
+    	background-color: #ffffff;
+    }
+    abbr {
+    	padding: 2px 10px;
+        border-radius: 2px;
+        position: relative;
+        top: -10px;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+    i {
+    	position: relative;
+    	top: -2px;
+    	font-size: 8px;
+    }
+    &.hr-full {
+    	width: 100%;
+    }
+    &.hr-long {
+    	width: 50%;
+    	margin: 20px auto 30px;
+    }
+    &.hr-short {
+    	width: 25%;
+    	margin: 20px auto 30px;
+    }
+    &.hr-left {
+    	text-align: left;
+    	abbr {
+    		padding-left: 0;
+    	}
+    	&.hr-long {
+    		margin-left: 0;
+    	}
+    }
+    &.hr-right {
+    	text-align: right;
+    	abbr {
+    		padding-right: 0;
+    	}
+    	&.hr-long {
+    		margin-right: 0;
+    	}
+    }
+    &.hr-double {
+    	border-top: 4px double #ebebeb;
+    	abbr {
+    		top: -12px;
+    	}
+    }
+}
+
+// Heading
+
+.heading {
+	margin-bottom: 80px;
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: #303030;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+	}
+	&:after {
+		border-top: 3px solid #303030;
+        display: block;
+        margin-top: 10px;
+        width: 30px;
+        content: "";
+	}
+	> span {
+		display: block;
+        color: #888;
+	}
+	h1 {
+		font-size: 52px;
+        line-height: 54px;
+        + span,
+        + span.lead {
+        	font-size: 22px;
+        }
+	}
+	h2 {
+		font-size: 40px;
+		line-height: 42px;
+		+ span,
+		+ span.lead {
+			font-size: 20px;
+		}
+	}
+	h3 {
+		font-size: 28px;
+		line-height: 30px;
+		+ span,
+		span.lead {
+			font-size: 18px;
+		}
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 20px;
+		+ span,
+		span.lead {
+			font-size: 15px;
+		}
+	}
+    &.heading-center {
+    text-align: center;
+    float: none;
+    }
+	&.heading-center > span,
+	&.title-center > span {
+		max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	&.heading-center:after,
+	&.title-center:after {
+		margin: 30px auto 0;
+	}
+    
+    
+
+    
+    
+    
+}
+// heading light
+
+.heading.heading-light,
+.text-light .heading,
+.heading.heading-light p,
+.heading.heading-light .lead,
+.heading.heading-light h2,
+.heading.heading-light h3 {
+    color: #fff !important;
+}
+.heading.heading-light:after,
+.text-light .heading:after {
+    border-top: 4px solid #fff;
+}
+
+// hero headings
+
+.heading-hero {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 21px !important;
+    position: relative;
+    margin-bottom: 30px;
+}
+.text-center a .title,
+.text-right a .title {
+    width: 100%;
+    left: 0;
+}
+.text-right {
+	a .title {
+		left: auto;
+        right: 30px;
+        width: 100%;
+	}
+}
+
+
+
+
+
+//Fancy headings
+
+.fancy-title {
+	position: relative;
+	margin-bottom: 30px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		position: relative;
+		display: inline-block;
+		background-color: #FFF;
+		padding-right: 15px;
+		margin-bottom: 0;
+	}
+
+	h4,
+	h5,
+	h6 {
+		padding-right: 10px;
+	}
+
+	&.title-double-border,
+	&.title-border,
+	&.title-border-color {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 0;
+			border-top: 3px double #E5E5E5;
+			left: auto;
+			top: 46%;
+			right: 0;
+		}
+	}
+
+	&.title-border {
+		&:before {
+			top: 49%;
+			border-top: 1px solid #EEE;
+		}
+	}
+
+	&.title-border-color {
+		&:before {
+			top: 49%;
+			border-top: 1px solid $base-color;
+			opacity: 0.6;
+		}
+	}
+}
+
+
+/* Fancy Title - Center Align
+-----------------------------------------------------------------*/
+
+.title-center {
+	text-align: center;
+
+	h1,
+	h2,
+	h3 {
+		padding: 0 15px;
+	}
+
+	h4,
+	h5,
+	h6 {
+		padding: 0 10px;
+	}
+}
+
+
+/* Fancy Title - Right Align
+-----------------------------------------------------------------*/
+
+.title-right {
+	text-align: right;
+
+	h1,
+	h2,
+	h3 {
+		padding: 0 0 0 15px;
+	}
+
+	h4,
+	h5,
+	h6 {
+		padding: 0 0 0 10px;
+	}
+}

@@ -1,0 +1,137 @@
+$white: #fff;
+$light-grey: #eee;
+
+/* ----------------------------------------------------------------------
+    Page title
+-------------------------------------------------------------------------*/
+#page-title {
+	border-bottom: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
+	clear: both;
+	padding: 40px 0;
+	position: relative;
+	background-color: #f8f8f8;
+	.container {
+		position: relative;
+	}
+	&[class*="col-"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.page-title {
+	h1 {
+		display: block;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-left: -2px;
+        margin-top: -4px;
+	}
+	> span.lead {
+		display: block;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 18px;
+	}
+	span {
+		opacity: 0.7;
+	}
+}
+
+// page header right
+
+.page-title-right {
+	.page-title {
+		float: right;
+		text-align: right;
+	}
+	.breadcrumb {
+		text-align: left !important;
+	}
+}
+
+//page title center
+
+.page-title-center {
+	.page-title {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.breadcrumb {
+		float: none;
+		text-align: center !important;
+		width: 100%;
+	}
+}
+// page title pattern
+
+.page-title-pattern {
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+// page title small
+
+#page-title {
+	&.page-title-small {
+		padding: 6px 0 4px !important;
+		.page-title {
+			margin-top: 20px;
+			h1 {
+				font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 14px;
+			}
+		}
+		.breadcrumb {
+			margin-top: 8px;
+		}
+	}
+	// page title extended
+	&.page-title-extended {
+		padding: 100px 0;
+	}
+	&.page-title-video {
+		background-color: transparent;
+	}
+}
+.page-title-extended h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+// Page title: transparent header
+
+#header {
+	&.header-transparent + {
+		.page-title-video,
+		.page-title-parallax {
+			padding-top: 170px;
+			padding-bottom: 80px;
+		}
+	}
+	&.header-light-transparent + {
+		.page-title-video,
+		.page-title-parallax {
+			padding-top: 170px;
+			padding-bottom: 80px;
+		}
+	}
+	&.header-dark-transparent + {
+		.page-title-video,
+		.page-title-parallax {
+			padding-top: 170px;
+			padding-bottom: 80px;
+		}
+	}
+}
+.page-title-parallax {
+	border-bottom: 5px solid $light-grey !important;
+}

@@ -1,0 +1,145 @@
+$white: #fff;
+$light-grey: #eee;
+
+
+// Accordion & toggles 
+
+.accordion {
+	.ac-item {
+		.ac-title {
+			&:before {
+				font-family: fontawesome;
+			}
+			&:before {
+				cursor: pointer;
+                position: absolute;
+                top: 14px;
+                right: 10px;
+                display: block;
+                padding: 3px 6px 2px;
+                color: #ddd;
+                content: "\f054";
+                font-size: 12px;
+                line-height: 12px;
+                -webkit-transition: all 0.25s ease-in-out 0s;
+                transition: all 0.25s ease-in-out 0s;
+			}
+		}
+		> .ac-title > i {
+			margin-right: 16px;
+		}
+		.ac-active .ac-title:before {
+			-webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            ms-transform: rotate(90deg);
+		}
+	}
+	.ac-title {
+		position: relative;
+		padding: 12px 30px 12px 15px;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.06);
+        margin-bottom: 2px;
+	}
+	.ac-content {
+		overflow: hidden;
+	}
+	margin-bottom: 20px;
+}
+.ac-content {
+	padding: 16px 13px;
+}
+
+// Clean
+
+.accordion.clean .ac-item .ac-title {
+    border: 0px;
+    background: transparent;
+}
+
+// Border
+
+.accordion {
+	.border .ac-item .ac-title {
+		border: 1px solid #e7e7e7;
+	}
+	.border-bottom .ac-item .ac-title {
+		border-bottom: 1px solid #e7e7e7;
+	}
+}
+
+// Radius
+
+
+.accordion.radius .ac-item .ac-title {
+    border-radius: 4px;
+}
+
+// Fancy 
+
+.accordion {
+	&.fancy {
+		.ac-item {
+			-moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: $white;
+            border-color: #e7e7e7;
+            border-style: solid;
+            border-width: 1px 1px 0px 1px;
+            .ac-title {
+            	margin: 0;
+            }
+            .ac-active .ac-title,
+            :last-child {
+            	border-bottom: 1px solid #e7e7e7;
+            }
+		}
+		// Fancy Clean
+		&.clean .ac-item.ac-active .ac-title {
+			background-color: transparent;
+		}
+		// Fancy Radius
+		&.radius > .ac-item {
+			&:first-child {
+				border-radius: 4px 4px 0 0;
+			}
+			&:last-child {
+				border-radius: 0 0 4px 4px;
+			}
+		}
+	}
+	// Color
+	&.color .ac-item {
+		.ac-title:before {
+			color: $white;
+		}
+		.ac-open {
+			display: block;
+		}
+	}
+	// Transparent 
+	&.accordion-transparent {
+		.ac-item {
+			background-color: transparent !important;
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.1);
+            .ac-title::before {
+            	color: #333;
+            }
+            p {
+            	color: #111;
+            }
+		}
+		&.fancy .ac-item.ac-active .ac-title,
+		.ac-item:last-child {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+	}
+}

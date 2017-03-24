@@ -1,0 +1,32 @@
+/*------------------------------------------------------
+     Comments
+------------------------------------------------------*/
+
+.comments {
+	margin-bottom: 80px;
+	margin-top: 28px;
+	.avatar {
+		border-radius: 4px;
+		margin-right: 15px;
+		width: 50px;
+	}
+}
+.comments-title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.comment {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	.media-body {
+		border: 1px solid #eee;
+		border-radius: 4px;
+		padding: 20px;
+	}
+	.time {
+		margin-bottom: 20px;
+	}
+}
+.comment-replied {
+	padding-left: 40px;
+}

@@ -1,0 +1,41 @@
+
+// Pie Charts
+
+.pie-animated {
+    opacity: 1;
+}
+.pie-chart {
+	display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    canvas {
+    	position: absolute;
+        top: 0;
+        left: 0;
+    }
+    span,
+    i {
+    	display: inline-block;
+        font-size: 28px;
+        z-index: 2;
+        font-weight: 600;
+    }
+    i {
+    	font-size: 38px;
+    }
+    span.percent:after {
+    	content: '%';
+        margin-left: 0.1em;
+        font-size: .8em;
+    }
+    // Transparent
+    &.transparent {
+    	span,
+    	span.percent,
+    	i {
+    		color: #fff;
+    	}
+    }
+}

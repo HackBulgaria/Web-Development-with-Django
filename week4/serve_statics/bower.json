@@ -1,0 +1,23 @@
+{
+  "name": "serve_statics",
+  "homepage": "https://github.com/HackBulgaria/Web-Development-with-Django",
+  "authors": [
+    "Radoslav Georgiev <radorado@hackbulgaria.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "owlcarousel": "^1.3.2",
+    "magnific-popup": "^1.1.0"
+  }
+}

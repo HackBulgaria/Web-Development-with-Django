@@ -1,0 +1,209 @@
+/* ----------------------------------------------------------------------
+Forms
+-------------------------------------------------------------------------*/
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  line-height: 1.33333;
+  padding: 12px 18px;
+  border-radius: 4px;
+  &:focus {
+    box-shadow: none;
+  }
+  &.input-lg {
+    resize: none;
+    font-size: 0.9em;
+  }
+  &.rounded {
+    border-radius: 4px;
+  }
+  border: 2px solid #ebebeb;
+}
+
+.input-group-addon {
+  border: 2px solid #ebebeb;
+}
+
+.form-group label {
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.form-inline button {
+  margin: 0px;
+}
+
+.form-group > label {
+  display: block;
+}
+
+.has-feedback label ~ .form-control-feedback {
+  top: 44px;
+}
+
+.form-gray-fields .form-control {
+  background-color: #f2f2f2;
+  border-color: #e9e9e9;
+  color: #333;
+  &:focus {
+    background-color: #eee;
+  }
+}
+
+.form-transparent-fields .form-control {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.form-transparent-light-fields .form-control {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+label.error {
+  color: #b71828;
+  display: none !important;
+  font-weight: 400;
+}
+
+.form-control.error, .sm-form-control.error {
+  border-color: #b71828;
+}
+
+.form-control {
+  &.error {
+    color: #b71828;
+  }
+  &::-moz-placeholder, &::-ms-input-placeholder, &::-webkit-input-placeholder {
+    color: #bbbbbb;
+  }
+}
+
+/*form select*/
+
+select {
+  border: 1px solid #e3e3e3;
+  color: #777;
+  cursor: pointer;
+  display: block;
+  line-height: 14px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 14px;
+}
+
+.order-select {
+  > h6 {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+.button-search {
+  background-color: #fff;
+  border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+  border-style: solid;
+  border-width: 1px 1px 1px 0 !important;
+  box-shadow: none;
+  margin-left: -6px !important;
+  z-index: 2 !important;
+}
+
+/* ----------------------------------------------------------------------
+ Reservation form
+-------------------------------------------------------------------------*/
+
+.reservation-form-over {
+  top: -80px;
+  z-index: 10;
+  margin-bottom: -80px;
+  overflow: inherit;
+}
+
+.reservation-form {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  min-height: 160px;
+  padding: 30px;
+  position: relative;
+  z-index: 9999 !important;
+  label {
+    color: #555;
+  }
+  input, select {
+    border: 0px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    width: 100%;
+  }
+  .date input {
+    border-radius: 4px 0 0 4px;
+    border-width: 2px 0 2px 2px;
+  }
+  .input-group-addon {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff !important;
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px 2px 2px 0;
+  }
+  input, select {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    line-height: 1.42857;
+    padding: 8px 14px;
+    width: 100%;
+  }
+}
+
+/*reservation form style 2*/
+
+#book {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 40px;
+  label {
+    color: #fff;
+  }
+  .date input {
+    border-radius: 4px 0 0 4px;
+  }
+  input, select {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    line-height: 1.42857;
+    padding: 8px 14px;
+    width: 100%;
+  }
+  .input-group-addon {
+    background-color: #fff !important;
+    border: 0 none;
+  }
+  input, select {
+    border: 0 none;
+  }
+}

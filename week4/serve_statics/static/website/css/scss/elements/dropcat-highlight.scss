@@ -1,0 +1,48 @@
+$white: #fff;
+$light-grey: #eee;
+
+// Dropcat & Highlight
+
+.dropcap {
+	background: none repeat scroll 0 0 $light-grey;
+    border-radius: 4px;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin: 3px 10px 0 0;
+    text-align: center;
+    width: 40px;
+    &.dropcap-circle {
+    	border-radius: 50%;
+    }
+    &.dropcap-large {
+    	font-size: 44px;
+    	height: 80px;
+    	line-height: 80px;
+    	width: 80px;
+    }
+    &.dropcap-small {
+    	font-size: 16px;
+        height: 20px;
+        line-height: 20px;
+        margin: 3px 5px -3px 0;
+        width: 21px;
+    }
+}
+span.highlight {
+	padding: 0 5px;
+}
+.highlight {
+	a {
+		color: #333;
+	}
+	&.highlight-large {
+		font-size: 20px;
+	}
+	&.highlight-small {
+		font-size: 12px;
+		padding: 0 7px;
+	}
+}

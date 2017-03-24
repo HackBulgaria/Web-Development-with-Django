@@ -1,0 +1,38 @@
+
+// Yt player (youtube player)
+
+#youtube-background-controls {
+	background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    width: 60px;
+    .fa {
+    	font-size: 23px;
+        line-height: 40px;
+    }
+    .fa-pause,
+    .fa-play {
+    	-webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        opacity: 0;
+        position: absolute;
+        left: 19px;
+        top: 9px;
+    }
+    .fa-play {
+    	left: 22px;
+    }
+    .fa-pause {
+    	opacity: 1;
+    }
+    &.video-is-playing {
+    	.fa-play {
+    		opacity: 1;
+    	}
+    	.fa-pause {
+    		opacity: 0;
+    	}
+    }
+}

@@ -1,0 +1,236 @@
+/* DEFAULT HEX COLOR: #f07677 */
+/* CHANE IT BY REPLEACING THE VALUE ABOVE */
+
+::-moz-selection {
+ background: #f07677;
+ color: #333;
+ text-shadow: none;
+}
+::selection {
+	background: #f07677;
+	text-shadow: none;
+	color: #333;
+}
+.text-colored, h1.text-colored, h2.text-colored, h3.text-colored, h4.text-colored, h5.text-colored, h6.text-colored, .color-font, .color-font a, .widget-tweeter li a, .widget-twitter li a, p.text-colored, .heading.heading-colored h1, .heading.heading-colored h2 {
+	color: #f07677 !important;
+}
+.progress-bar-container.color .progress-bar {
+	background-color: #f07677;
+	color: #fff;
+}
+.blockquote-color {
+	background-color: #f07677;
+	color: #fff;
+}
+.blockquote-color > small {
+	color: #fff;
+}
+/*buttons*/
+.button.color, .btn.btn-primary {
+	background-color: #f07677;
+	border-color: #f07677;
+	color: #fff;
+}
+/*go to top*/
+
+.gototop-button {
+	background-color: #f07677;
+}
+.gototop-button {
+	color: #fff;
+}
+nav .main-menu .dropdown-menu {
+	border-color: #f07677;
+}
+#topbar.topbar-colored {
+	background-color: #f07677;
+}
+/*vertical-dot-menu */
+#vertical-dot-menu a:hover .cd-dot, #vertical-dot-menu a.active .cd-dot {
+	background-color: #f07677;
+}
+/*scrollspy nav */
+/*.sidebar-menu ul.nav-tabs li, */
+.sidebar-menu ul.nav-tabs li:hover .sidebar-menu ul.nav-tabs li a, .sidebar-menu ul.nav-tabs li a:hover, .sidebar-menu ul.nav-tabs li.active a, .sidebar-menu ul.nav-tabs li.active a:hover {
+	color: #fff;
+	background: #f07677;
+	border: 1px solid #f07677;
+}
+/*Bootstrap defaults overrides*/
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #f07677;
+	border-color: #f07677;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+	color: #fff;
+}
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+	color: #f07677;
+}
+pre {
+	background-color: #fcfcfc;
+	border: 1px solid #ececec;
+}
+.alert {
+	border-left-width: 10px;
+	border-radius: 0;
+}
+.alert-success {
+	background-color: #5cb85c;
+	border-color: #53af53;
+}
+.alert-info {
+	background-color: #2699c8;
+	border-color: #3aaddc;
+}
+.alert-warning {
+	background-color: #f6b63a;
+	border-color: #ffcd51;
+}
+.alert-danger {
+	background-color: #de4b37;
+	border-color: #f3604c;
+}
+.alert, .alert a.alert-link {
+	color: #fff;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	background-color: #f07677;
+	border-color: #f07677;
+	color: #fff;
+}
+.pagination > li > a:hover i, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	color: #333;
+}
+/*navs*/
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: #f07677;
+	color: #fff;
+}
+/*Typography*/
+
+a:hover {
+	color: #f07677;
+}
+/*dropcat & highlight*/
+.dropcap.dropcap-colored, .dropcap.dropcap-colored a, .highlight.highlight-colored, .highlight.highlight-colored a {
+	background-color: #f07677;
+	color: #fff;
+}
+/*timeline*/
+.timeline.timeline-colored .timeline-circles:before, .timeline.timeline-colored .timeline-circles:after, .timeline.timeline-colored .timeline-date, .timeline.timeline-colored:before {
+	background-color: #f07677;
+	color: #fff;
+}
+.timeline.timeline-colored li .timeline-block:before {
+	border-color: transparent #f07677;
+}
+.timeline.timeline-colored .timeline-block-image {
+	border-color: #f07677;
+}
+.timeline.timeline-colored.timeline-simple .timeline-date {
+	background-color: #fff;
+	border: 1px solid #f07677;
+	color: #f07677;
+}
+/*tabs*/
+
+.border .tabs-navigation li.active a:after {
+	background: #f07677;
+}
+/*accordions*/
+
+.breadcrumb a:hover {
+	color: #f07677;
+}
+/*color*/
+
+.accordion.color .ac-item .ac-title {
+	background: #f07677;
+	color: #fff;
+}
+.accordion.color-border-bottom .ac-item .ac-title {
+	border-bottom: 1px dotted #f07677;
+}
+.accordion.color-border-bottom .ac-item .ac-title:before {
+	color: #f07677;
+}
+/*ICONS*/
+
+.icon-box.color .icon i {
+	background: #f07677;
+	color: #fff;
+}
+.icon-box.color .icon i:after {
+	box-shadow: 0 0 0 3px #f07677;
+}
+.icon-box.border.color .icon, .icon-box.border.color .icon i {
+	color: #f07677;
+	border-color: #f07677;
+}
+.icon-box.fancy.color .icon i {
+	color: #f07677;
+	background-color: transparent;
+}
+/*FONT AWESOME ICONS*/
+
+.fontawesome-icon-list .fa-hover a:hover {
+	background-color: #f07677;
+}
+/*lists icons*/
+
+ul.icon-list li i {
+	color: #f07677;
+}
+/* ----------------------------------------------------------------
+    Backgrounds
+-----------------------------------------------------------------*/
+
+.background-colored {
+	background-color: #f07677 !important;
+}
+/* ----------------------------------------------------------------
+    NPROGRESS
+-----------------------------------------------------------------*/
+
+#nanobar-progress div {
+	background: #f07677 !important;
+}
+/* ----------------------------------------------------------------
+    PORTFOLIO
+-----------------------------------------------------------------*/
+.portfolio-filter li.ptf-active, .portfolio-filter li:hover {
+	background-color: #f07677;
+}
+.portfolio-filter li:not(.ptf-active):hover {
+	color: #f07677;
+}
+/* ----------------------------------------------------------------
+    HEADINGS
+-----------------------------------------------------------------*/
+.heading-title-border-color {
+	border-color: #f07677;
+}
+/* ----------------------------------------------------------------
+    IMAGE BOX
+-----------------------------------------------------------------*/
+.image-box-links a {
+	background-color: #f07677;
+}
+.image-box.effect.bleron {
+	background-color: #f07677;
+}
+.image-block-content .feature-icon {
+	background-color: #f07677;
+}
+.image-box.effect.bleron p.image-box-links a {
+	color: #f07677;
+}
+/* ----------------------------------------------------------------
+    SHOP PRODUCTS
+-----------------------------------------------------------------*/
+.product .product-wishlist a:hover {
+	border-color: #f07677;
+}

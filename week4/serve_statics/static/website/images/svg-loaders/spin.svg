@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100%" height="100%" fill="white"  xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"><rect id="svgEditorBackground" x="0" y="0" width="32" height="32" style="fill: none; stroke: none;"/>
+  <path opacity=".25" d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4" fill="black" style="fill-opacity: 0.23;"/>
+  <path d="M 16 0 A 16 16 0 0 1 32 16 L 28 16 A 12 12 0 0 0 16 4 Z" transform="rotate(38.1861 16 16)" style="fill-opacity: 0.39;" fill="gray">
+    <animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+</svg>

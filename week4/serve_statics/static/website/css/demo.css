@@ -1,0 +1,18 @@
+.dropdown.label-demo {
+	padding-right: 10px !important;
+}
+.dropdown.label-demo > a {
+	position: relative;
+}
+.dropdown.label-demo > a > .label.infinit {
+	position: absolute;
+	right: -3px;
+	top: 24px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#header.header-mini .dropdown.label-demo > a > .label,
+#header.header-sticky .dropdown.label-demo > a > .label {
+	top: 10px;
+}

@@ -1,0 +1,64 @@
+
+// Horizontal Rules
+
+hr {
+	margin-bottom: 10px;
+    margin-top: 10px;
+    clear: both;
+    &.space {
+    	border: none;
+    	height: 50px;
+    }
+    &.space-xs {
+    	border: none;
+        height: 20px;
+    }
+    &.space-md {
+    	border: none;
+        height: 40px;
+    }
+    &.space-lg {
+    	border: none;
+    height: 80px;
+    }
+    &.space-xlg {
+    	border: none;
+    height: 120px;
+    }
+    &.space-xxlg {
+    	border: none;
+    height: 200px;
+    }
+}
+body {
+	&.device-sm {
+		hr.space {
+			height: 26px;
+		}
+	}
+	&.device-xs,
+	&.device-xxs {
+		hr.space {
+			height: 16px;
+		}
+	}
+	&.device-xxs,
+	&.device-xs {
+		hr.space-lg {
+			height: 40px;
+		}
+		hr.space-xlg {
+			height: 40px;
+		}
+		hr.space-xxlg {
+			height: 80px;
+		}
+	}
+}
+.space {
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 20px;
+    position: relative;
+}

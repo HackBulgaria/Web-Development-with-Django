@@ -1,0 +1,247 @@
+/* ----------------------------------------------------------------
+    TEMPLATE FONTS
+-----------------------------------------------------------------*/
+
+/*Google fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:400,500,600,700,300);
+
+
+/*body*/
+body {
+     font-family: "Montserrat",sans-serif ! important;
+}
+
+/*headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    
+}
+
+/*main menu*/
+#mainMenu ul > li, 
+#mainMenu ul > li > a {
+     font-family: "Montserrat",sans-serif;
+}
+
+#mainMenu > ul ul > li > a,
+#mainMenu > ul ul > li > span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: "Montserrat",sans-serif !important;
+}
+
+
+
+
+
+
+
+
+.btn {
+    font-family: "Montserrat",sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+#page-header-bg h1,
+body h1,
+body .row .col.section-title h1,
+.full-width-content .recent-post-container .inner-wrap h2 {
+    font-family: Hind;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700
+}
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    body .row .col.section-title h1,
+    body h1,
+    .full-width-content .recent-post-container .inner-wrap h2 {
+        font-size: 56px;
+        line-height: 56px
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 690px) {
+    body .row .col.section-title h1,
+    body h1 {
+        font-size: 52px;
+        line-height: 52px
+    }
+    .full-width-content .recent-post-container .inner-wrap h2 {
+        font-size: 48px;
+        line-height: 48px
+    }
+}
+@media only screen and (max-width: 690px) {
+    body .row .col.section-title h1,
+    body h1 {
+        font-size: 48px;
+        line-height: 48px
+    }
+    .full-width-content .recent-post-container .inner-wrap h2 {
+        font-size: 36px;
+        line-height: 36px
+    }
+}
+#page-header-bg h2,
+body h2,
+article.post .post-header h2,
+article.post.quote .post-content h2,
+article.post.link .post-content h2,
+article.post.format-status .post-content h2,
+#call-to-action span,
+.woocommerce .full-width-tabs #reviews h3,
+.row .col.section-title h2 {
+    font-family: Hind;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 300
+}
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    body h2 {
+        font-size: 35.7px;
+        line-height: 40.8px
+    }
+    .row .span_2 h2,
+    .row .span_3 h2,
+    .row .span_4 h2,
+    .row .vc_col-sm-2 h2,
+    .row .vc_col-sm-3 h2,
+    .row .vc_col-sm-4 h2 {
+        font-size: 29.4px;
+        line-height: 33.6px
+    }
+}
+@media only screen and (max-width: 690px) {
+    .col h2 {
+        font-size: 25.2px;
+        line-height: 28.8px
+    }
+}
+body h3,
+.row .col h3,
+.toggle h3 a,
+.ascend #respond h3,
+.ascend h3#comments,
+.woocommerce ul.products li.product.text_on_hover h3,
+.masonry.classic_enhanced .masonry-blog-item h3.title {
+    font-family: Hind;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700
+}
+@media only screen and (min-width: 1000px) {
+    .ascend .comments-section .comment-wrap.full-width-section > h3,
+    .blog_next_prev_buttons[data-post-header-style="default_minimal"] .col h3 {
+        font-size: 54.4px!important;
+        line-height: 62.4px!important
+    }
+    .masonry.classic_enhanced .masonry-blog-item.large_featured h3.title {
+        font-size: 48px!important;
+        line-height: 48px!important
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+    body .portfolio-items.constrain-max-cols.masonry-items .col.elastic-portfolio-item h3 {
+        font-size: 27.2px!important;
+        line-height: 27.2px
+    }
+}
+@media only screen and (max-width: 1300px) and (min-width: 1000px),
+(max-width: 690px) {
+    .row .span_2 h3,
+    .row .span_3 h3,
+    .row .span_4 h3,
+    .row .vc_col-sm-2 h3,
+    .row .vc_col-sm-3 h3,
+    .row .vc_col-sm-4 h3 {
+        font-size: 22.4px;
+        line-height: 22.4px
+    }
+}
+body h4,
+.row .col h4,
+.portfolio-items .work-meta h4,
+.portfolio-items .col.span_3 .work-meta h4,
+#respond h3,
+h3#comments,
+.portfolio-items[data-ps="6"] .work-meta h4 {
+    font-family: Hind;
+    font-size: 16px;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+  font-size: 16px !important;
+
+
+@media only screen and (min-width: 690px) {
+    .portfolio-items[data-ps="6"] .wide_tall .work-meta h4 {
+        font-size: 51px!important;
+        line-height: 59px!important
+    }
+}
+body h5,
+.row .col h5,
+.portfolio-items .work-item.style-3-alt p {
+    font-family: Varela Round;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400
+}
+body .wpb_column > .wpb_wrapper > .morphing-outline .inner>h5 {
+    font-size: 27px!important
+}
+body h6,
+.row .col h6 {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700
+}
+
+
+html body, body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #000;
+}
+
+
+p {
+  color: #888;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 27px;
+    
+}

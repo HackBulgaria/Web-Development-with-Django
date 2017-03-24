@@ -1,0 +1,151 @@
+$white: #fff;
+$light-grey: #eee;
+
+// Clients Logo
+
+.grid li,
+.clients-carousel a,
+.clients-carousel a img {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+.parallax {
+	.clients-carousel a {
+		opacity: 1;
+	}
+}
+.grid li:hover,
+.clients-carousel a:hover,
+.clients-carousel a:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+.client-carousel .owl-item img,
+.clients-logo .owl-item img {
+    padding: 20px;
+}
+.grid {
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	li {
+		float: left;
+        position: relative;
+        width: 20%;
+        padding: 20px;
+	}
+	&.grid-2-columns {
+		li,
+		figure {
+			width: 50%;
+		}
+	}
+	&.grid-3-columns {
+		li,
+		figure {
+			width: 33.333333%;
+		}
+	}
+	&.grid-4-columns {
+		li,
+		figure {
+			width: 25%;
+		}
+	}
+	&.grid-5-columns {
+		li,
+		figure {
+			width: 20%;
+		}
+	}
+	&.grid-6-columns {
+		li,
+		figure {
+			width: 16.6666666%;
+		}
+	}
+	li:hover {
+		cursor: pointer;
+		background-color: #f8f8f8;
+	}
+	li a,
+	li img {
+		display: block;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	li {
+		a img {
+			width: 100%;
+		}
+		&:before,
+		:after {
+			content: '';
+            position: absolute;
+		}
+		&:before {
+			height: 100%;
+			top: 0;
+			left: -1px;
+			border-left: 1px solid $light-grey;
+		}
+		&:after {
+			width: 100%;
+			height: 0;
+			top: auto;
+			left: 0;
+			bottom: -1px;
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+	// Client options 
+	&.clients-grey {
+		border: 1px solid #ddd;
+		li {
+			background-color: $light-grey;
+			&:before {
+				border-left: 1px solid #ccc;
+			}
+			&:after {
+				border-bottom: 1px solid #ccc;
+			}
+		}
+	}
+	&.clients-border {
+		border-width: 10px;
+	}
+}
+
+// Carousel logo 
+
+.carousel-description-clients {
+	.carousel {
+		margin-top: 40px;
+	}
+	.owl-prev,
+	.owl-next {
+		margin-top: -40px !important;
+	}
+}
+body {
+	&.device-sm,
+	&.device-xs,
+	&.device-xxs {
+		.carousel-description-clients .owl-controls {
+			display: none;
+		}
+	}
+	&.device-sm,
+	&.device-xs {
+		.grid li {
+			width: 33.33%;
+		}
+	}
+	&.device-xxs {
+		.grid li {
+			width: 50%;
+		}
+	}
+}
