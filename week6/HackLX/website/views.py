@@ -1,61 +1,41 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.decorators import login_required
-from django.urls import reverse
+from django.views.generic import ListView
+from django.views.generic.edit import CreateView, UpdateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from .models import Offer, Category
-from .forms import OfferCreateModelForm
+
+class OfferListView(ListView):
+    model = Offer
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        context['categories'] = Category.objects.count()
+
+        return context
+
+class CreateOfferView(LoginRequiredMixin, CreateView):
+    model = Offer
+    fields = ("title", "description", "category", "image")
+    template_name = 'website/offer_form.html'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy('website:index')
 
 
-def index(request):
-    offers = Offer.objects.select_related('category', 'author').all()
+class UpdateOfferView(LoginRequiredMixin, UpdateView):
+    model = Offer
+    pk_url_kwarg = 'offer'
+    fields = ("title", "description", "category")
+    template_name = 'website/offer_form.html'
 
-    return render(request, 'website/index.html', locals())
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
-@login_required(login_url='website:login')
-def add_offer(request):
-    form = OfferCreateModelForm()
-
-    if request.method == 'POST':
-        form = OfferCreateModelForm(request.POST, request.FILES)
-
-        import ipdb; ipdb.set_trace()
-        if form.is_valid():
-            form = form.save(commit=False)
-            form.author = request.user
-            form.save()
-            return redirect(reverse('website:index'))
-
-    return render(request, 'website/add_offer.html', locals())
-
-@login_required(login_url='website:login')
-def edit_offer(request, pk):
-    offer = get_object_or_404(Offer, pk=int(pk))
-    form = OfferCreateModelForm(instance=offer)
-
-    if request.method == 'POST':
-        form = OfferCreateModelForm(request.POST, request.FILES)
-
-        if form.is_valid():
-            form = form.save(commit=False)
-            form.author = request.user
-            form.save()
-            return redirect(reverse('website:index'))
-
-    return render(request, 'website/add_offer.html', locals())
-
-def delete_offer(request, pk):
-    offer = get_object_or_404(Offer, pk=int(pk))
-    offer.delete()
-    return redirect(reverse('website:index'))
-
-def get_statistics(request):
-    # TODO: Move logic in services
-    categories = Category.objects.all()
-    categories_result = {}
-
-    for category in categories:
-        categories_result[category.name] = category.offer_set.count()
-
-
-    # TODO: Add more statistics information
-
-    return render(request, 'website/statistics.html', locals())
+    def get_success_url(self):
+        return reverse_lazy('website:index')

@@ -25,10 +25,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="/add-offer/">Add Offer</a></li>
-            <li><a href="/statistics/">Statistics</a></li>
+            <li class="active"><a href="{% url 'website:index' %}">Home</a></li>
+            <li><a href="{% url 'website:add-offer' %}">Add Offer</a></li>
+            <li><a href="{% url 'website:statistics' %}">Statistics</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             {% if not user.is_authenticated %}
