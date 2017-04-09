@@ -8,3 +8,7 @@ Keep in mind:
 - You have handle the media file upload
 - You have to optimize you calls using django-debug-toolbar
 - You have to use Bootstrap to make the system look good.
+
+Rewrite all views using class-based-views.
+
+Add a new `DetailView` for every offer.
