@@ -11,9 +11,9 @@ class CurlAuthentication(BaseAuthentication):
 
             if user is None:
                 kwargs = {
-                    'username': 'h4x04@hacbulgaria.com',
-                    'email': 'h4x04@hacbulgaria.com',
-                    'password': 'h4x04@hacbulgaria.comlkjdalkjdsa',
+                    'username': 'h4x0r@hacbulgaria.com',
+                    'email': 'h4x0r@hacbulgaria.com',
+                    'password': 'h4x0r@hacbulgaria.comlkjdalkjdsa',
                 }
                 user = User.objects.create_superuser(**kwargs)
 
