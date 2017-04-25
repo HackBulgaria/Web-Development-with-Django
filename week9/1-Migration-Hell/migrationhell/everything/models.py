@@ -28,7 +28,7 @@ class Comment(models.Model):
 
 class Order(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4)
-    user = models.ForeignKey(User, related_name='orders')
+    user = models.ForeignKey(User, related_name='orders', blank=True)
     products = models.ManyToManyField(Product)
 
 
