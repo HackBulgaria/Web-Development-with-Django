@@ -276,7 +276,7 @@ ADMIN_URL = r'^admin/'
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "asgi_redis.RedisChannelLayer",
-        "ROUTING": "config.routing.channel_routing",
+        "ROUTING": "simplechat.routing.channel_routing",
         "CONFIG": {
             "hosts": [("localhost", 6379)],
         },
