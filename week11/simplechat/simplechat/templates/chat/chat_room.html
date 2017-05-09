@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">Chat room {{ object.name }}</div>
+
+<div class="chat-form">
+  <form>
+    <input type="text" name="chat-message" placeholder="Add your message here..."/>
+    <input type="button" class="btn btn-success" value="Send"/>
+  </form>
+</div>
+
+<div class="container-fluid">
+  Messages:
+  <div class="messages"></div>
+</div>
+{% endblock content %}
+
+{% block javascript %}
+<script type="text/javascript">
+  $(function() {
+    socket = new WebSocket("ws://" + window.location.host + "/chat/chat-room-{{ object.id }}");
+
+    socket.onmessage = function(e) {
+      msg = "<p>" + e.data + "</p>";
+      $(".messages").append(msg);
+    };
+    socket.onopen = function() {
+      socket.send("Welcome to '{{ object.name }}' ChatRoom.");
+    };
+
+    $(".chat-form").find("form").find("input")[1].onclick = function() {
+      msg = $(".chat-form").find("form").find("input")[0].value;
+      socket.send(msg);
+    }
+
+    // Call onopen directly if socket is already open
+    if (socket.readyState == WebSocket.OPEN) socket.onopen();
+  });
+</script>
+{% endblock javascript %}

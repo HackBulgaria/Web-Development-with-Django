@@ -57,6 +57,7 @@ LOCAL_APPS = [
     # custom users app
     'simplechat.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'simplechat.chat.apps.ChatConfig',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -272,3 +273,12 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "ROUTING": "simplechat.routing.channel_routing",
+        "CONFIG": {
+            "hosts": [("localhost", 6379)],
+        },
+    },
+}

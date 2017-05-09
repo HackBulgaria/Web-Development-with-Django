@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<a type="button" class="btn btn-success" href="{% url 'chat:chat_room:create' %}">Create New Chat Room</a>
+<a type="button" class="btn btn-success" href="{% url 'chat:chat-room:create' %}">Create New Chat Room</a>
 
 <div class="container">
   <div class="row">
@@ -17,7 +17,7 @@
         <tr>
           <td>{{ chat_room.name }}</td>
           <td>{{ chat_room.capacity }}</td>
-          <td><a href="{% url 'chat:chat_room:detail' chat_room.id %}">Chat On!</a></td>
+          <td><a href="{% url 'chat:chat-room:detail' chat_room.id %}">Chat On!</a></td>
         </tr>
         {% endfor %}
         </tbody>
