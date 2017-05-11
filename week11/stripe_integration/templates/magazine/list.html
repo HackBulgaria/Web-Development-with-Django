@@ -1,0 +1,6 @@
+<h1> Magazines </h1>
+
+{% for magazine in object_list %}
+<p>{{ magazine }}</p>
+<a href="{% url 'magazine:article-list' magazine.id %}">view article</a>
+{% endfor %}
