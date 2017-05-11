@@ -18,5 +18,8 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    url(r'^logout/', auth_views.logout),
+    url(r'^accounts/login/', auth_views.login),
     url(r'^admin/', admin.site.urls),
+    url(r'^magazine/', include('magazine.urls', namespace='magazine')),
 ]
