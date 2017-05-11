@@ -3,16 +3,15 @@
 Educational django project with Stripe integration
 ---
 
-### Initial setup
-* Create repo
-* Add db, Python & Emacs files
-
-### Checkout `users` app
+## Things to do before we begin
+* Explore `users` app. It has:
 * `BaseUser` with email & password
 * Custom managers
 * Changed `AUTH_USER_MODEL`
 
-### Create magazine
+## Simple plan for today:
+
+### Create magazine app
 * Create `Magazine` & `Article` models. Register in admin
 * Create magazine & article list views
 * Create urls. Register them
@@ -22,7 +21,6 @@ Educational django project with Stripe integration
 * Add `/login` url. Add template
 * Add `/logout` url
 * Add `LoginRequiredMixin`
-
 
 ### Create payments module
 * Create Stripe account
