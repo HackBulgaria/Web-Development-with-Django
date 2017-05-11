@@ -30,3 +30,10 @@
 * Import app in `__init__.py`
 * Create dummy task
 * Run celery in separate terminal
+
+### Tests
+* Unit tests
+* *Integration* tests. Mocking
+
+## Bonus
+* Subscriptions
