@@ -24,6 +24,7 @@
 * Add `CreateCustomerView`
 * Use Stripe's embeded card info modal
 * Create `BuyArticleView`
+* Create `RefundArticleView`
 
 ### Setup Celery
 * Create `celery.py`
