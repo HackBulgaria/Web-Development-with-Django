@@ -1,18 +1,14 @@
-## Integrating Stripe Payment with Django
+# Integrating Stripe Payment with Django
 
-Educational django project with Stripe integration
----
-
-### Initial setup
-* Create repo
-* Add db, Python & Emacs files
-
-### Checkout `users` app
+## Things to do before we begin
+* Explore `users` app. It has:
 * `BaseUser` with email & password
 * Custom managers
 * Changed `AUTH_USER_MODEL`
 
-### Create magazine
+## Simple plan for today:
+
+### Create magazine app
 * Create `Magazine` & `Article` models. Register in admin
 * Create magazine & article list views
 * Create urls. Register them
@@ -23,15 +19,22 @@ Educational django project with Stripe integration
 * Add `/logout` url
 * Add `LoginRequiredMixin`
 
-
 ### Create payments module
 * Create Stripe account
 * Add `CreateCustomerView`
 * Use Stripe's embeded card info modal
 * Create `BuyArticleView`
+* Create `RefundArticleView`
 
 ### Setup Celery
 * Create `celery.py`
 * Import app in `__init__.py`
 * Create dummy task
 * Run celery in separate terminal
+
+### Tests
+* Unit tests
+* *Integration* tests. Mocking
+
+## Bonus
+* Subscriptions
