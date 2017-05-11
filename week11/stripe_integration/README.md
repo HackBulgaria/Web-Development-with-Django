@@ -1,7 +1,4 @@
-## Integrating Stripe Payment with Django
-
-Educational django project with Stripe integration
----
+# Integrating Stripe Payment with Django
 
 ## Things to do before we begin
 * Explore `users` app. It has:
