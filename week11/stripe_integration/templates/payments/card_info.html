@@ -1,0 +1,12 @@
+<form method="POST" action="{% url 'payments:create-customer' %}">
+  {% csrf_token %}
+  <script
+     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+     data-key="{{ stripe_pk }}",
+     data-email="{{ email }}",
+     data-allow-remember-me="false",
+     data-label="Add card info",
+     data-panel-label="Add">
+  </script>
+</form>
+
