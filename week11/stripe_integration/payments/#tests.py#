@@ -1,0 +1,39 @@
+from unittest import TestCase, mock
+
+from users.models import Buyer
+
+from django.test import override_settings, Client
+from django.core.urlresolvers import reverse
+
+
+def make_mock_object(**kwargs):
+    return type('', (object, ), kwargs)
+
+
+class CreateCustomerTaskTests(TestCase):
+
+    def setUp(self):
+        password = 'buyer123123'
+        self.buyer = Buyer.objects.create(email='buyer@buyer.com',
+                                          password=password)
+        self.client = Client()
+        self.client.login(email=self.buyer.email, password=password)
+
+    @mock.patch('payments.tasks.stripe.Customer.create')
+    @override_settings(CELERY_TASK_ALWAYS_EAGER=True)
+    def test_customer_id_is_set_when_customer_is_created_in_stripe(self, method_mock):
+        self.assertIsNone(self.buyer.customer_id)
+
+        test_customer_id = 'test_id'
+        method_mock.return_value = make_mock_object(id=test_customer_id)
+
+        self.assertFalse(method_mock.called)
+
+        url = reverse('payments:create-customer')
+        data = {'stripeToken': 'test_token'}
+
+        self.client.post(url, data)
+
+        self.assertTrue(method_mock.called)
+        self.buyer.refresh_from_db()
+        self.assertEqual(self.buyer.customer_id, test_customer_id)

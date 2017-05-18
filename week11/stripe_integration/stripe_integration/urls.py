@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^accounts/login/', auth_views.login),
     url(r'^admin/', admin.site.urls),
     url(r'^magazine/', include('magazine.urls', namespace='magazine')),
+    url(r'^payments/', include('payments.urls', namespace='payments')),
 ]

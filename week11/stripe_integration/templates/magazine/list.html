@@ -4,3 +4,6 @@
 <p>{{ magazine }}</p>
 <a href="{% url 'magazine:article-list' magazine.id %}">view article</a>
 {% endfor %}
+
+<p>Add card info</p>
+{% include "payments/card_info.html" with stripe_pk=stripe_pk email=request.user.email %}

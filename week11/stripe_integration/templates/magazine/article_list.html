@@ -1,3 +1,8 @@
 {% for article in object_list %}
+<form method="POST" action="{% url 'payments:charge-customer' %}">
+  {% csrf_token %}
+  <input type="hidden" name="price" value="{{ article.price }}">
+  <button type="submit">Buy for {{ article.price }}</button>
+</form>
 <p>{{ article }}</p>
 {% endfor %}

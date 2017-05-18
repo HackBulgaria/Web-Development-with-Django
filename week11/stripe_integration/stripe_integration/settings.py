@@ -150,3 +150,6 @@ TEMPLATES = [
         },
     },
 ]
+
+STRIPE_PUBLIC_KEY = "pk_test_GBTKdgB7jEsX9E215Ev9IcZ2"
+STRIPE_API_KEY = "sk_test_ycQZa8W7VJ6CNMOcwV6SdJj7"
