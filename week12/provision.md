@@ -87,7 +87,7 @@ python manage.py runserver 0.0.0.0:8000
 **Important note** You won't be able to access it from outside
 
 ```
-gunicorn config.wsgi:application
+gunicorn --bind 0.0.0.0:8000 --workers=4 config.wsgi:application
 ```
 
 ## Setup upstart job that's gona keep the gunicorn up
