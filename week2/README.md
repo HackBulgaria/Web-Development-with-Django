@@ -12,7 +12,7 @@ Agenda:
 
 Install the PostgreSQL server:
 ```
-$ sudo apt-get install postgresql postgresql-contrib
+$ sudo apt-get install postgresql postgresql-contrib libpq-dev
 ```
 
 Switch over to the postgres account on your server by typing:
